@@ -9,7 +9,7 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Yayasan Nurul Qur'an — Praya, Lombok Tengah NTB">
 <meta property="og:description" content="Tahfidz, Tilawah, Khat & Qira'atul Kutub. Membentuk generasi Qur'ani yang berilmu dan berakhlak mulia.">
-<meta property="og:image" content="masjid.jpg">
+<meta property="og:image" content="background.png">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230F3D2E'/%3E%3Cpath d='M32 14c5 5.2 7.5 9.4 7.5 12.6 0 3.8-3.2 6.6-7.5 6.6s-7.5-2.8-7.5-6.6c0-3.2 2.5-7.4 7.5-12.6z' fill='%23C6A15B'/%3E%3Crect x='16' y='38' width='32' height='10' rx='2' fill='none' stroke='%23C6A15B' stroke-width='3'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,7 +35,6 @@ html[data-theme="dark"] .nav .bar{background:rgba(12,22,17,.9)}
 html[data-theme="dark"] .sec-alt{background:rgba(18,33,26,.6)}
 html[data-theme="dark"] .marquee{background:#0B2E23}
 html[data-theme="dark"] .pcard,html[data-theme="dark"] .bmini,html[data-theme="dark"] .arow{background:var(--card)}
-/* HEADER */
 .top{position:fixed;top:0;left:0;right:0;z-index:100}
 .topbar{background:var(--dark);color:rgba(255,255,255,.85);font-family:var(--fm);font-size:10px;letter-spacing:.14em;text-transform:uppercase;display:flex;justify-content:center;gap:10px;padding:7px 14px;text-align:center;flex-wrap:wrap}
 .topbar b{color:var(--gold)}
@@ -61,7 +60,6 @@ html[data-theme="dark"] .pcard,html[data-theme="dark"] .bmini,html[data-theme="d
 .nav-toggle{display:none}
 @media(max-width:960px){.nav-links{display:none;position:absolute;top:var(--head-h);left:0;right:0;background:var(--card);border-bottom:1px solid var(--line);flex-direction:column;gap:0;padding:8px 24px 14px;box-shadow:var(--sh-lg);z-index:50}
 .nav.open .nav-links{display:flex}.nav-links a{padding:13px 0;border-bottom:1px solid var(--line);font-size:15px}.nav-links a:last-child{border-bottom:0}.nav-links a::after{display:none}.nav-toggle{display:grid}}
-/* MARQUEE */
 .marquee{height:var(--mq-h);background:#14532D;color:#fff;overflow:hidden;display:flex;align-items:center;user-select:none;border-top:1px solid rgba(198,161,91,.4)}
 .mq-track{display:flex;width:max-content;animation:mq 40s linear infinite}
 .marquee:hover .mq-track{animation-play-state:paused}
@@ -77,7 +75,6 @@ html[data-theme="dark"] .pcard,html[data-theme="dark"] .bmini,html[data-theme="d
 .btn.ghost-w:hover{border-color:#fff;background:transparent}
 .btn.big{min-height:52px;padding:12px 28px;font-size:15px}
 .btn .ic{width:16px;height:16px}
-/* HERO */
 .hero{position:relative;min-height:min(720px,92svh);display:flex;align-items:center;color:#fff;overflow:hidden;background:linear-gradient(135deg,#14532D,#0B2E23)}
 .hero-bg{position:absolute;inset:0;z-index:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cg fill='none' stroke='%23C6A15B' stroke-width='1'%3E%3Crect x='18' y='18' width='36' height='36'/%3E%3Crect x='18' y='18' width='36' height='36' transform='rotate(45 36 36)'/%3E%3C/g%3E%3C/svg%3E");opacity:.1}
 .hero-bg img{width:100%;height:100%;object-fit:cover;opacity:.9}
@@ -95,14 +92,12 @@ h1 em{font-style:normal;color:var(--gold)}
 .stat{background:rgba(11,46,35,.55);backdrop-filter:blur(6px);padding:18px 16px}
 .stat b{font-family:var(--fd);font-size:clamp(22px,2.6vw,30px);font-weight:800;color:var(--gold);display:block}
 .stat span{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.65)}
-/* SECTION HEAD */
 .shead{margin-bottom:clamp(20px,2.6vw,32px)}
 .s-kick{display:inline-flex;align-items:center;gap:9px;font-family:var(--fm);font-weight:600;font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--acc);margin-bottom:8px}
 .s-kick::before{content:"";width:8px;height:8px;background:var(--acc)}
 .s-kick.gold{color:var(--gold-d)}.s-kick.gold::before{background:var(--gold)}
 .shead h2{font-family:var(--fd);font-size:clamp(22px,2.8vw,32px);font-weight:800;letter-spacing:-.02em;line-height:1.2}
 .shead p{color:var(--mut);margin-top:8px;max-width:60ch}
-/* TENTANG */
 .about{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(20px,3.5vw,48px)}
 .visi{background:var(--dark);color:#fff;border-radius:var(--r);padding:clamp(22px,3vw,32px);position:relative;overflow:hidden}
 .visi::before{content:"";position:absolute;inset:0;opacity:.08;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cg fill='none' stroke='%23ffffff' stroke-width='1.2'%3E%3Crect x='18' y='18' width='36' height='36'/%3E%3Crect x='18' y='18' width='36' height='36' transform='rotate(45 36 36)'/%3E%3C/g%3E%3C/svg%3E")}
@@ -115,7 +110,6 @@ h1 em{font-style:normal;color:var(--gold)}
 .misi li:last-child{border-bottom:0}
 .misi .ic{width:18px;height:18px;color:var(--acc);flex:none;margin-top:3px}
 .sejarah{color:var(--mut);font-size:14.5px;margin-top:14px}
-/* PROGRAM */
 .pgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
 .pcard{background:var(--bg);border:1px solid var(--line);border-radius:var(--r);padding:clamp(20px,2.2vw,26px);transition:.3s var(--ease)}
 html[data-theme="dark"] .pcard{background:var(--card)}
@@ -125,7 +119,6 @@ html[data-theme="dark"] .pcard{background:var(--card)}
 .pcard .pic .ic{width:22px;height:22px}
 .pcard h3{font-family:var(--fd);font-size:16px;font-weight:700;margin-bottom:6px}
 .pcard p{color:var(--mut);font-size:13.5px;line-height:1.65}
-/* PPDB */
 .ppdb-card{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(20px,3vw,40px);background:var(--dark);color:#fff;border-radius:clamp(20px,2.6vw,28px);padding:clamp(24px,3.4vw,44px);position:relative;overflow:hidden;box-shadow:var(--sh-lg)}
 .ppdb-card::before{content:"";position:absolute;inset:0;opacity:.07;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cg fill='none' stroke='%23C6A15B' stroke-width='1.2'%3E%3Crect x='18' y='18' width='36' height='36'/%3E%3Crect x='18' y='18' width='36' height='36' transform='rotate(45 36 36)'/%3E%3C/g%3E%3C/svg%3E")}
 .ppdb-card>*{position:relative}
@@ -143,7 +136,6 @@ html[data-theme="dark"] .pcard{background:var(--card)}
 .steps h4{font-family:var(--fd);font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
 .steps li{display:flex;gap:14px;padding:10px 0;font-size:14px;color:rgba(255,255,255,.88)}
 .steps .n{width:28px;height:28px;border-radius:50%;background:rgba(198,161,91,.16);border:1px solid rgba(198,161,91,.4);color:var(--gold);font-family:var(--fm);font-weight:600;font-size:12px;display:grid;place-items:center;flex:none;margin-top:1px}
-/* BERITA */
 .bgrid{display:grid;grid-template-columns:1.5fr 1fr;gap:16px}
 .bfeat{position:relative;border-radius:var(--r);overflow:hidden;background:var(--dark);border:1px solid var(--line);cursor:pointer;min-height:340px;display:flex;align-items:flex-end}
 .bfeat .bimg{position:absolute;inset:0;background:linear-gradient(135deg,#14532D,#0B2E23)}
@@ -163,7 +155,6 @@ html[data-theme="dark"] .bmini{background:var(--card)}
 .bmini h4{font-family:var(--fd);font-size:13.5px;font-weight:600;line-height:1.45;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .bmini:hover h4{color:var(--acc)}
 .bmini small{display:block;margin-top:4px;font-size:11px;color:var(--mut)}
-/* AGENDA */
 .arow{display:flex;gap:16px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;align-items:flex-start;transition:.25s;margin-bottom:12px}
 .arow:hover{border-color:var(--gold);transform:translateY(-2px);box-shadow:var(--sh)}
 .dbox{width:52px;flex:none;text-align:center;background:rgba(22,121,75,.08);border-radius:12px;padding:8px 2px;border-bottom:3px solid var(--gold)}
@@ -172,7 +163,6 @@ html[data-theme="dark"] .dbox b{color:var(--gold)}
 .dbox span{font-size:9px;font-weight:700;letter-spacing:.12em;color:var(--acc);text-transform:uppercase}
 .arow strong{font-family:var(--fd);font-size:14.5px;font-weight:700;display:block}
 .arow small{font-size:12px;color:var(--mut);display:block;margin-top:3px}
-/* GALERI */
 .ggrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
 .gf{position:relative;border-radius:var(--r);aspect-ratio:4/3;overflow:hidden;border:1px solid var(--line);background:linear-gradient(135deg,#14532D,#0B2E23);cursor:pointer}
 .gf img{width:100%;height:100%;object-fit:cover;transition:transform .7s var(--ease)}
@@ -183,7 +173,6 @@ html[data-theme="dark"] .dbox b{color:var(--gold)}
 .gf .vp{position:absolute;top:50%;left:50%;translate:-50% -50%;z-index:2;width:48px;height:48px;border-radius:50%;background:rgba(11,46,35,.75);border:1px solid rgba(255,255,255,.5);display:grid;place-items:center;color:#fff;transition:.25s}
 .gf:hover .vp{background:var(--gold);color:#2E240E;border-color:var(--gold)}
 .gf .vp .ic{width:20px;height:20px}
-/* DONASI */
 .don-card{display:grid;grid-template-columns:1fr auto;gap:clamp(20px,3vw,44px);align-items:center;background:var(--dark);color:#fff;border-radius:clamp(20px,2.6vw,28px);padding:clamp(24px,3.4vw,44px);position:relative;overflow:hidden}
 .don-card::before{content:"";position:absolute;inset:0;opacity:.07;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cg fill='none' stroke='%23C6A15B' stroke-width='1.2'%3E%3Crect x='18' y='18' width='36' height='36'/%3E%3Crect x='18' y='18' width='36' height='36' transform='rotate(45 36 36)'/%3E%3C/g%3E%3C/svg%3E")}
 .don-card>*{position:relative}
@@ -200,7 +189,6 @@ html[data-theme="dark"] .dbox b{color:var(--gold)}
 .qris{text-align:center}
 .qris img{width:170px;height:170px;object-fit:cover;border-radius:14px;border:3px solid var(--gold);background:#fff}
 .qris small{display:block;margin-top:8px;font-family:var(--fm);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.55)}
-/* FOOTER */
 footer{background:var(--dark);color:#fff;padding:clamp(36px,5vw,60px) 0 0}
 .ft{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:clamp(24px,4vw,56px)}
 .ft h4{font-family:var(--fm);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
@@ -218,7 +206,6 @@ footer{background:var(--dark);color:#fff;padding:clamp(36px,5vw,60px) 0 0}
 .ft-map iframe{width:100%;height:220px;border:0;display:block}
 .copy{margin-top:clamp(28px,4vw,44px);border-top:1px solid rgba(255,255,255,.1);padding:18px;text-align:center;font-family:var(--fm);font-size:10.5px;letter-spacing:.08em;color:rgba(255,255,255,.45)}
 .copy b{color:var(--gold)}
-/* READER */
 #nrd{position:fixed;inset:0;z-index:600;display:none;align-items:flex-start;justify-content:center;padding:0 16px;background:rgba(7,17,11,.78);backdrop-filter:blur(6px);overflow:auto}
 #nrd.open{display:flex}
 .nrd-box{background:var(--card);border-radius:20px;max-width:760px;width:100%;margin:5vh auto;box-shadow:0 40px 90px rgba(0,0,0,.5);position:relative;overflow:hidden}
@@ -235,7 +222,6 @@ html[data-theme="dark"] .nrd-body p{color:#C7D6CC}
 .pdfbtn{display:inline-flex;align-items:center;gap:9px;background:var(--gold);color:#2E240E;font-weight:700;font-size:13px;border-radius:99px;padding:10px 18px;margin-top:4px;transition:.2s}
 .pdfbtn:hover{background:var(--gold-d);color:#fff}
 .pdfbtn .ic{width:15px;height:15px}
-/* LIGHTBOX + NAVIGASI */
 #lbx{position:fixed;inset:0;z-index:700;display:none;align-items:center;justify-content:center;padding:clamp(14px,3vw,40px);background:rgba(7,17,11,.92);backdrop-filter:blur(6px)}
 #lbx.open{display:flex}
 .lbx-wrap{position:relative;width:min(920px,100%)}
@@ -250,7 +236,6 @@ html[data-theme="dark"] .nrd-body p{color:#C7D6CC}
 .lbx-nav:hover{background:var(--gold);color:#2E240E;border-color:var(--gold)}
 .lbx-prev{left:10px}.lbx-next{right:10px}
 body.lock{overflow:hidden}
-/* MISC */
 [data-io]{opacity:0;transform:translateY(22px);transition:opacity .8s var(--ease) var(--d,0s),transform .8s var(--ease) var(--d,0s)}
 [data-io].in{opacity:1;transform:none}
 .topfab{position:fixed;right:clamp(14px,2.5vw,24px);bottom:clamp(14px,2.5vw,24px);z-index:90;width:52px;height:52px;border-radius:50%;background:var(--acc);color:#fff;display:grid;place-items:center;box-shadow:0 12px 28px rgba(22,121,75,.42);opacity:0;pointer-events:none;transition:.25s}
@@ -288,7 +273,7 @@ body.lock{overflow:hidden}
 
 <!-- HERO -->
 <section class="hero" id="top">
-  <div class="hero-bg" id="heroBg"><img src="masjid.jpg" alt="" onerror="this.remove()"></div>
+  <div class="hero-bg" id="heroBg"><img src="background.png" alt="" onerror="this.remove()"></div>
   <div class="hero-ov"></div>
   <div class="wrap">
     <div class="ar basmalah" lang="ar">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
@@ -381,7 +366,7 @@ body.lock{overflow:hidden}
 <section id="galeri" class="sec-alt">
   <div class="wrap">
     <div class="shead" data-io><span class="s-kick gold">Dokumentasi</span><h2>Galeri Kegiatan</h2>
-      <p>Dokumentasi halaqah, haflah, dan kegiatan santri. Klik foto untuk melihat lebih besar — gunakan tombol ‹ › untuk menelusuri.</p></div>
+      <p>Dokumentasi kegiatan santri. Klik foto untuk memperbesar — gunakan tombol ‹ › atau panah keyboard untuk menelusuri.</p></div>
     <div class="ggrid" id="gGrid" data-io></div>
   </div>
 </section>
@@ -469,7 +454,9 @@ pdf:'<path d="M6 3.5h8L19 8.5V20a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 5 20V5a
 check:'<path d="M20 6 9 17l-5-5"/>'
 })[n]+'</svg>'}
 
-/* ═══ DEFAULT ═══ */
+/* ═══ DEFAULT — galeri otomatis berisi 30 foto "galeri (N).jpg" di repo ═══ */
+var GAL_DEF=[];
+for(var gi=1;gi<=30;gi++){GAL_DEF.push({id:'gd'+gi,judul:'Kegiatan '+gi,foto:'galeri ('+gi+').jpg',yt:''})}
 var DEF_SD={
   profile:{nama:"Yayasan Nurul Qur'an",tagline:"Membentuk generasi Qur'ani yang berilmu, berakhlak mulia, dan bermanfaat bagi agama, bangsa, dan masyarakat",
     hero:{judul:"Membentuk Generasi <em>Qur'ani</em> yang Berilmu & Berakhlak Mulia",sub:"Yayasan Nurul Qur'an di Lendang Simbe, Mertak Tombok, Praya, Lombok Tengah — membina santri melalui Tahfidz, Tilawah, serta Khat & Qira'atul Kutub dalam lingkungan yang asri, disiplin, dan penuh keberkahan.",foto:""},
@@ -482,7 +469,7 @@ var DEF_SD={
   ppdb:{status:"Segera",tahun:"2026/2027",mulai:today(7),selesai:today(60),kuota:"",biaya:"",wa:"",
     syarat:["Mengisi formulir pendaftaran (datang langsung ke sekretariat)","Fotokopi ijazah / SKL","Fotokopi Kartu Keluarga & Akta Kelahiran","Pas foto terbaru","Surat keterangan sehat"],
     catatan:"Informasi lengkap PPDB dapat ditanyakan langsung kepada panitia."},
-  gallery:[{judul:"Halaqah Tahfidz Pagi",foto:"",yt:""},{judul:"Haflah Khatmul Qur'an",foto:"",yt:""},{judul:"Kegiatan Santri",foto:"",yt:""},{judul:"Lingkungan Pesantren",foto:"",yt:""}],
+  gallery:GAL_DEF,
   settings:{siteUrl:"https://nurulquranlombok.vercel.app",email:"",phone:"",address:"Lendang Simbe, Desa Mertak Tombok, Kec. Praya, Kab. Lombok Tengah, NTB",maps:"",ig:"",fb:"",yt:"",donasi:{bank:"",norek:"",an:"",qris:""}}
 };
 var DEF_NEWS=[{id:"d1",tanggal:today(),kategori:"Pengumuman",judul:"Website Resmi Yayasan Nurul Qur'an Aktif",penulis:"Humas Nurul Qur'an",foto:"",pdf:"",tampil:true,
@@ -525,7 +512,6 @@ if(st.berdiri)items.push(["Berdiri Tahun",st.berdiri]);
  $('#stats').innerHTML=items.length?items.map(function(x){return '<div class="stat"><b data-n="'+x[1]+'">'+(x[1]>2000?x[1]:'0')+'</b><span>'+x[0]+'</span></div>'}).join(''):'';
  $('#tbTahun').textContent=PP.tahun||'';$('#tbStatus').textContent=PP.status||'';
  $('#pGrid').innerHTML=(D.programs||[]).map(function(p){return '<div class="pcard" data-io><span class="pic">'+ic(p.ic||'quran')+'</span><h3>'+esc(p.judul)+'</h3><p>'+esc(p.desk)+'</p></div>'}).join('');
-/* ppdb */
 var stat=(PP.status||'').toLowerCase();
  $('#ppStatus').textContent=PP.status||'Segera';
 if(stat==='segera')$('#ppStatus').classList.add('segera');
@@ -538,7 +524,6 @@ if(stat==='ditutup')$('#ppStatus').classList.add('tutup');
  $('#ppSteps').innerHTML=(PP.syarat||[]).map(function(s,i){return '<li><span class="n">'+(i+1)+'</span><span>'+esc(s)+'</span></li>'}).join('');
 var wa=String(PP.wa||'').replace(/\D/g,'');
 if(wa){$('#ppWa').style.display='';$('#ppWa').href='https://wa.me/'+wa+'?text='+encodeURIComponent("Assalamu'alaikum, saya ingin mendapatkan informasi pendaftaran santri baru "+(PP.tahun||'')+" di Yayasan Nurul Qur'an. Terima kasih.")}
-/* berita */
 function featHTML(n){return '<div class="bfeat" data-open="'+n.id+'">'
   +'<div class="bimg">'+(n.foto?'<img src="'+esc(n.foto)+'" alt="">':'')+'</div><div class="grad"></div>'
   +'<span class="bcat">'+esc(n.kategori)+'</span>'
@@ -547,19 +532,16 @@ if(NEWS.length){$('#bFeat').innerHTML=featHTML(NEWS[0]);
   $('#bSide').innerHTML=NEWS.slice(1,4).map(function(n){
     return '<div class="bmini" data-open="'+n.id+'"><div class="th">'+(n.foto?'<img src="'+esc(n.foto)+'" alt="">':ic('img'))+'</div><div><h4>'+esc(n.judul)+'</h4><small>'+fmt(n.tanggal,{day:"numeric",month:"short",year:"numeric"})+' · '+esc(n.kategori)+'</small></div></div>'}).join('');
 }else{$('#bFeat').innerHTML='<div style="padding:40px;text-align:center;color:var(--mut);border:1.5px dashed var(--line);border-radius:18px">Belum ada berita.</div>'}
-/* agenda */
 var AG=(D.agenda||[]).slice().sort(function(a,b){return a.tanggal.localeCompare(b.tanggal)});
  $('#agList').innerHTML=AG.length?AG.map(function(a){var d=new Date(a.tanggal+"T00:00:00");
   return '<div class="arow"><div class="dbox"><b>'+d.getDate()+'</b><span>'+d.toLocaleDateString('id-ID',{month:'short'})+'</span></div>'
   +'<div><strong>'+esc(a.judul)+'</strong><small>'+esc(a.waktu||'')+(a.tempat?' · '+esc(a.tempat):'')+'</small></div></div>'}).join('')
   :'<div style="padding:30px;text-align:center;color:var(--mut);border:1.5px dashed var(--line);border-radius:18px">Belum ada agenda.</div>';
-/* galeri */
  $('#gGrid').innerHTML=GAL.map(function(g,i){
   return '<figure class="gf" data-g="'+i+'">'
     +(g.yt?'<span class="vp"><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M10 8.5l6 3.5-6 3.5z"/></svg></span>':'')
     +(g.foto?'<img src="'+esc(g.foto)+'" alt="'+esc(g.judul)+'" loading="lazy">':'<span class="ph">'+ic('img')+'</span>')
     +'<figcaption class="cap">'+esc(g.judul)+'</figcaption></figure>'}).join('');
-/* donasi */
 var adaRek=!!(DN.bank||DN.norek);
 if(adaRek){$('#rekBox').style.display='';$('#donBankLbl').textContent=DN.bank?'':'Rekening';$('#donBank').textContent=DN.bank||'';$('#donBank').style.display=DN.bank?'':'none';
   $('#donRek').textContent=DN.norek?'No. Rek: '+DN.norek:'';$('#donAn').textContent=DN.an?'a.n. '+DN.an:''}
@@ -569,7 +551,6 @@ if(adaRek&&DN.norek){$('#btnCopy').addEventListener('click',function(){var t=(DN
   function ok(){var b=$('#btnCopy');b.innerHTML=ic('check')+' Tersalin!';
     setTimeout(function(){b.innerHTML='<svg class="ic" viewBox="0 0 24 24"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg> Salin No. Rekening'},1800)}
   if(navigator.clipboard)navigator.clipboard.writeText(t).then(ok);else{var i=document.createElement('input');i.value=t;document.body.appendChild(i);i.select();document.execCommand('copy');i.remove();ok()}})}
-/* footer */
  $('#ftNama2').textContent=P.nama;
  $('#ftTag').textContent=P.tagline||'';
  $('#ftY').textContent=new Date().getFullYear();
@@ -602,7 +583,7 @@ function openReader(n){var paras=(n.isi||'').split(/\n\s*\n/).map(function(p){re
 function closeReader(){$('#nrd').classList.remove('open');document.body.classList.remove('lock')}
  $('#nrd').addEventListener('click',function(e){if(e.target===this)closeReader()});
 
-/* ═══ LIGHTBOX DENGAN NAVIGASI ‹ › ═══ */
+/* ═══ LIGHTBOX ‹ › ═══ */
 var lbxIdx=-1;
 function ytId(u){var m=String(u||'').match(/(?:youtu\.be\/|v=|embed\/|shorts\/)([\w-]{11})/);return m?m[1]:''}
 function openLbxAt(i){if(!GAL.length)return;
@@ -624,7 +605,7 @@ document.addEventListener('keydown',function(e){
     if(e.key==='ArrowRight')openLbxAt(lbxIdx+1);
   }else if(e.key==='Escape')closeReader()});
 
-/* ═══ BUKA ARTIKEL DARI SHARE WA (b/slug.html → #b=slug) ═══ */
+/* ═══ BUKA ARTIKEL DARI SHARE WA ═══ */
 (function(){var m=location.hash.match(/^#b=([a-z0-9-]+)/i);if(!m)return;
 function nSlug(s){var t=String(s).toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"");
   if(t.length>60){t=t.slice(0,60);var c=t.lastIndexOf("-");if(c>10)t=t.slice(0,c)}return t}
