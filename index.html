@@ -9,15 +9,16 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Yayasan Nurul Qur'an — Praya, Lombok Tengah NTB">
 <meta property="og:description" content="Tahfidz, Tilawah, Khat & Qira'atul Kutub. Membentuk generasi Qur'ani yang berilmu dan berakhlak mulia.">
+<meta property="og:image" content="masjid.jpg">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230F3D2E'/%3E%3Cpath d='M32 14c5 5.2 7.5 9.4 7.5 12.6 0 3.8-3.2 6.6-7.5 6.6s-7.5-2.8-7.5-6.6c0-3.2 2.5-7.4 7.5-12.6z' fill='%23C6A15B'/%3E%3Crect x='16' y='38' width='32' height='10' rx='2' fill='none' stroke='%23C6A15B' stroke-width='3'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&family=Noto+Naskh+Arabic:wght@400;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#F7F9F8;--ink:#101913;--mut:#5C6B62;--acc:#16794B;--acc-d:#0F5C38;--gold:#C6A15B;--gold-d:#A9833F;--dark:#0F3D2E;--card:#fff;--line:rgba(16,25,19,.09);--sh:0 1px 2px rgba(16,25,19,.04),0 16px 40px rgba(16,25,19,.08);--sh-lg:0 24px 64px rgba(16,25,19,.16);--r:18px;--ease:cubic-bezier(.16,1,.3,1);--fd:'Sora',sans-serif;--fb:'Plus Jakarta Sans',sans-serif;--fm:'JetBrains Mono',monospace;--head-h:68px}
+:root{--bg:#F7F9F8;--ink:#101913;--mut:#5C6B62;--acc:#16794B;--acc-d:#0F5C38;--gold:#C6A15B;--gold-d:#A9833F;--dark:#0F3D2E;--card:#fff;--line:rgba(16,25,19,.09);--sh:0 1px 2px rgba(16,25,19,.04),0 16px 40px rgba(16,25,19,.08);--sh-lg:0 24px 64px rgba(16,25,19,.16);--r:18px;--ease:cubic-bezier(.16,1,.3,1);--fd:'Sora',sans-serif;--fb:'Plus Jakarta Sans',sans-serif;--fm:'JetBrains Mono',monospace;--head-h:68px;--mq-h:34px}
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{background:var(--bg);color:var(--ink);font-family:var(--fb);font-size:15.5px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body{background:var(--bg);color:var(--ink);font-family:var(--fb);font-size:15.5px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden;padding-top:calc(var(--head-h) + var(--mq-h))}
 img{display:block;max-width:100%}
 a{color:inherit;text-decoration:none;overflow-wrap:break-word}
 button{font:inherit;border:0;background:none;cursor:pointer;color:inherit}
@@ -26,16 +27,18 @@ ul,ol{list-style:none}
 .ic{width:1em;height:1em;flex:none;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .ar{font-family:'Noto Naskh Arabic',serif}
 .wrap{max-width:1180px;margin-inline:auto;padding-inline:clamp(18px,4.5vw,44px)}
-section{padding-block:clamp(42px,5vw,72px);scroll-margin-top:calc(var(--head-h) + 12px)}
+section{padding-block:clamp(42px,5vw,72px);scroll-margin-top:calc(var(--head-h) + var(--mq-h) + 12px)}
 .sec-alt{background:var(--card);border-block:1px solid var(--line)}
 .grain{position:fixed;inset:0;z-index:300;pointer-events:none;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
 html[data-theme="dark"]{--bg:#0C1611;--ink:#E6F0E9;--mut:#9CB3A5;--card:#12211A;--line:rgba(255,255,255,.1)}
 html[data-theme="dark"] .nav .bar{background:rgba(12,22,17,.9)}
 html[data-theme="dark"] .sec-alt{background:rgba(18,33,26,.6)}
+html[data-theme="dark"] .marquee{background:#0B2E23}
+html[data-theme="dark"] .pcard,html[data-theme="dark"] .bmini,html[data-theme="dark"] .arow{background:var(--card)}
 /* HEADER */
+.top{position:fixed;top:0;left:0;right:0;z-index:100}
 .topbar{background:var(--dark);color:rgba(255,255,255,.85);font-family:var(--fm);font-size:10px;letter-spacing:.14em;text-transform:uppercase;display:flex;justify-content:center;gap:10px;padding:7px 14px;text-align:center;flex-wrap:wrap}
 .topbar b{color:var(--gold)}
-.nav{position:fixed;top:0;left:0;right:0;z-index:100}
 .nav .bar{height:var(--head-h);background:rgba(247,249,248,.88);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
 .nav .bar .wrap{height:100%;display:flex;align-items:center;justify-content:space-between;gap:14px}
 .logo{display:inline-flex;align-items:center;gap:10px}
@@ -58,6 +61,14 @@ html[data-theme="dark"] .sec-alt{background:rgba(18,33,26,.6)}
 .nav-toggle{display:none}
 @media(max-width:960px){.nav-links{display:none;position:absolute;top:var(--head-h);left:0;right:0;background:var(--card);border-bottom:1px solid var(--line);flex-direction:column;gap:0;padding:8px 24px 14px;box-shadow:var(--sh-lg);z-index:50}
 .nav.open .nav-links{display:flex}.nav-links a{padding:13px 0;border-bottom:1px solid var(--line);font-size:15px}.nav-links a:last-child{border-bottom:0}.nav-links a::after{display:none}.nav-toggle{display:grid}}
+/* MARQUEE */
+.marquee{height:var(--mq-h);background:#14532D;color:#fff;overflow:hidden;display:flex;align-items:center;user-select:none;border-top:1px solid rgba(198,161,91,.4)}
+.mq-track{display:flex;width:max-content;animation:mq 40s linear infinite}
+.marquee:hover .mq-track{animation-play-state:paused}
+@keyframes mq{to{transform:translateX(-50%)}}
+.mq-g{display:flex;align-items:center;flex:none}
+.mq-g span{white-space:nowrap;font-family:var(--fm);font-weight:500;font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;padding-inline:22px;opacity:.75}
+.mq-g i{width:5px;height:5px;background:var(--gold);flex:none;transform:rotate(45deg)}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:var(--acc);color:#fff;font-weight:700;font-size:14px;min-height:46px;padding:10px 22px;border-radius:999px;transition:.2s;box-shadow:0 4px 14px rgba(15,61,46,.16)}
 .btn:hover{background:var(--acc-d);transform:translateY(-2px)}
 .btn.gold{background:var(--gold);color:#2E240E;box-shadow:0 6px 18px rgba(198,161,91,.35)}
@@ -71,6 +82,7 @@ html[data-theme="dark"] .sec-alt{background:rgba(18,33,26,.6)}
 .hero-bg{position:absolute;inset:0;z-index:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cg fill='none' stroke='%23C6A15B' stroke-width='1'%3E%3Crect x='18' y='18' width='36' height='36'/%3E%3Crect x='18' y='18' width='36' height='36' transform='rotate(45 36 36)'/%3E%3C/g%3E%3C/svg%3E");opacity:.1}
 .hero-bg img{width:100%;height:100%;object-fit:cover;opacity:.9}
 .hero-ov{position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(11,46,35,.96) 0%,rgba(11,46,35,.84) 40%,rgba(11,46,35,.5) 75%,rgba(11,46,35,.32) 100%),linear-gradient(0deg,rgba(11,46,35,.9) 0%,transparent 45%)}
+@media(max-width:640px){.hero-ov{background:linear-gradient(180deg,rgba(11,46,35,.86),rgba(11,46,35,.94))}}
 .hero .wrap{position:relative;z-index:2;width:100%;padding-block:clamp(48px,7vw,90px)}
 .basmalah{text-align:center;font-size:clamp(17px,2.2vw,24px);color:var(--gold);margin-bottom:clamp(22px,3vw,36px)}
 .hbrand{display:inline-flex;align-items:center;gap:14px;font-family:var(--fd);font-weight:800;font-size:clamp(13px,1.6vw,17px);letter-spacing:.14em;text-transform:uppercase;margin-bottom:18px}
@@ -135,7 +147,8 @@ html[data-theme="dark"] .pcard{background:var(--card)}
 .bgrid{display:grid;grid-template-columns:1.5fr 1fr;gap:16px}
 .bfeat{position:relative;border-radius:var(--r);overflow:hidden;background:var(--dark);border:1px solid var(--line);cursor:pointer;min-height:340px;display:flex;align-items:flex-end}
 .bfeat .bimg{position:absolute;inset:0;background:linear-gradient(135deg,#14532D,#0B2E23)}
-.bfeat .bimg img{width:100%;height:100%;object-fit:cover;opacity:.92}
+.bfeat .bimg img{width:100%;height:100%;object-fit:cover;opacity:.92;transition:transform .7s var(--ease)}
+.bfeat:hover .bimg img{transform:scale(1.04)}
 .bfeat .grad{position:absolute;inset:0;background:linear-gradient(to top,rgba(11,46,35,.97) 0%,rgba(11,46,35,.5) 40%,transparent 70%)}
 .bfeat-b{position:relative;z-index:2;padding:clamp(20px,2.4vw,28px);color:#fff;width:100%}
 .bcat{position:absolute;top:16px;left:16px;z-index:2;background:var(--gold);color:#2E240E;font-family:var(--fm);font-weight:600;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;padding:6px 12px;border-radius:8px}
@@ -205,7 +218,7 @@ footer{background:var(--dark);color:#fff;padding:clamp(36px,5vw,60px) 0 0}
 .ft-map iframe{width:100%;height:220px;border:0;display:block}
 .copy{margin-top:clamp(28px,4vw,44px);border-top:1px solid rgba(255,255,255,.1);padding:18px;text-align:center;font-family:var(--fm);font-size:10.5px;letter-spacing:.08em;color:rgba(255,255,255,.45)}
 .copy b{color:var(--gold)}
-/* MODAL READER */
+/* READER */
 #nrd{position:fixed;inset:0;z-index:600;display:none;align-items:flex-start;justify-content:center;padding:0 16px;background:rgba(7,17,11,.78);backdrop-filter:blur(6px);overflow:auto}
 #nrd.open{display:flex}
 .nrd-box{background:var(--card);border-radius:20px;max-width:760px;width:100%;margin:5vh auto;box-shadow:0 40px 90px rgba(0,0,0,.5);position:relative;overflow:hidden}
@@ -219,16 +232,23 @@ footer{background:var(--dark);color:#fff;padding:clamp(36px,5vw,60px) 0 0}
 .nrd-body{padding:26px 30px 30px}
 .nrd-body p{font-size:15.5px;line-height:1.9;color:var(--ink);margin-bottom:16px}
 html[data-theme="dark"] .nrd-body p{color:#C7D6CC}
-/* LIGHTBOX */
+.pdfbtn{display:inline-flex;align-items:center;gap:9px;background:var(--gold);color:#2E240E;font-weight:700;font-size:13px;border-radius:99px;padding:10px 18px;margin-top:4px;transition:.2s}
+.pdfbtn:hover{background:var(--gold-d);color:#fff}
+.pdfbtn .ic{width:15px;height:15px}
+/* LIGHTBOX + NAVIGASI */
 #lbx{position:fixed;inset:0;z-index:700;display:none;align-items:center;justify-content:center;padding:clamp(14px,3vw,40px);background:rgba(7,17,11,.92);backdrop-filter:blur(6px)}
 #lbx.open{display:flex}
 .lbx-wrap{position:relative;width:min(920px,100%)}
 .lbx-box{background:#000;border-radius:16px;overflow:hidden;box-shadow:0 40px 90px rgba(0,0,0,.6)}
 .lbx-box iframe{width:100%;aspect-ratio:16/9;border:0;display:block}
-.lbx-box img{display:block;max-width:100%;max-height:78vh;margin:0 auto}
-.lbx-bar{display:flex;justify-content:space-between;align-items:center;gap:12px;background:var(--dark);color:#fff;border-radius:0 0 16px 16px;padding:12px 18px;font-weight:600;font-size:13.5px}
+.lbx-box img{display:block;max-width:100%;max-height:74vh;margin:0 auto}
+.lbx-bar{display:flex;justify-content:space-between;align-items:center;gap:12px;background:var(--dark);color:#fff;border-radius:0 0 16px 16px;padding:12px 18px;font-weight:600;font-size:13.5px;flex-wrap:wrap}
+.lbx-bar small{font-family:var(--fm);font-size:10.5px;letter-spacing:.1em;color:rgba(255,255,255,.6)}
 .lbx-x{position:absolute;top:12px;right:12px;z-index:5;width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.14);color:#fff;display:grid;place-items:center;transition:.2s}
 .lbx-x:hover{background:var(--gold);color:#2E240E}
+.lbx-nav{position:absolute;top:50%;transform:translateY(-50%);z-index:5;width:46px;height:46px;border-radius:50%;background:rgba(11,46,35,.7);border:1px solid rgba(255,255,255,.35);color:#fff;display:grid;place-items:center;transition:.2s;font-size:18px}
+.lbx-nav:hover{background:var(--gold);color:#2E240E;border-color:var(--gold)}
+.lbx-prev{left:10px}.lbx-next{right:10px}
 body.lock{overflow:hidden}
 /* MISC */
 [data-io]{opacity:0;transform:translateY(22px);transition:opacity .8s var(--ease) var(--d,0s),transform .8s var(--ease) var(--d,0s)}
@@ -237,12 +257,14 @@ body.lock{overflow:hidden}
 .topfab.on{opacity:1;pointer-events:auto}
 .topfab .ic{width:21px;height:21px}
 @media(max-width:900px){.about,.bgrid,.ppdb-card,.don-card{grid-template-columns:1fr}.ft{grid-template-columns:1fr}.qris{justify-self:center}}
+@media(max-width:640px){:root{--head-h:60px;--mq-h:30px}.ggrid{grid-template-columns:1fr 1fr}.hero-cta .btn{width:100%}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}[data-io]{opacity:1;transform:none}}
 </style>
 </head>
 <body>
 <div class="grain" aria-hidden="true"></div>
 
+<div class="top">
 <header class="nav" id="nav">
   <div class="topbar">Yayasan Nurul Qur'an · Lendang Simbe, Mertak Tombok, Praya, Lombok Tengah · <b>PPDB <span id="tbTahun"></span>: <span id="tbStatus"></span></b></div>
   <div class="bar"><div class="wrap">
@@ -261,10 +283,12 @@ body.lock{overflow:hidden}
     </div>
   </div></div>
 </header>
+<div class="marquee" aria-hidden="true"><div class="mq-track" id="mqTrack"></div></div>
+</div>
 
 <!-- HERO -->
-<section class="hero" id="top" style="padding-top:var(--head-h)">
-  <div class="hero-bg" id="heroBg"></div>
+<section class="hero" id="top">
+  <div class="hero-bg" id="heroBg"><img src="masjid.jpg" alt="" onerror="this.remove()"></div>
   <div class="hero-ov"></div>
   <div class="wrap">
     <div class="ar basmalah" lang="ar">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
@@ -356,7 +380,8 @@ body.lock{overflow:hidden}
 <!-- GALERI -->
 <section id="galeri" class="sec-alt">
   <div class="wrap">
-    <div class="shead" data-io><span class="s-kick gold">Dokumentasi</span><h2>Galeri Kegiatan</h2></div>
+    <div class="shead" data-io><span class="s-kick gold">Dokumentasi</span><h2>Galeri Kegiatan</h2>
+      <p>Dokumentasi halaqah, haflah, dan kegiatan santri. Klik foto untuk melihat lebih besar — gunakan tombol ‹ › untuk menelusuri.</p></div>
     <div class="ggrid" id="gGrid" data-io></div>
   </div>
 </section>
@@ -403,11 +428,18 @@ body.lock{overflow:hidden}
 </footer>
 
 <div id="nrd" role="dialog" aria-modal="true"><div class="nrd-box" id="nrdBox"></div></div>
-<div id="lbx" role="dialog" aria-modal="true"><div class="lbx-wrap"><button class="lbx-x" id="lbxX" aria-label="Tutup"><svg class="ic" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></svg></button><div class="lbx-box" id="lbxBox"></div><div class="lbx-bar" id="lbxBar"></div></div></div>
+<div id="lbx" role="dialog" aria-modal="true">
+  <div class="lbx-wrap">
+    <button class="lbx-x" id="lbxX" aria-label="Tutup"><svg class="ic" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+    <button class="lbx-nav lbx-prev" id="lbxPrev" aria-label="Sebelumnya">‹</button>
+    <button class="lbx-nav lbx-next" id="lbxNext" aria-label="Berikutnya">›</button>
+    <div class="lbx-box" id="lbxBox"></div>
+    <div class="lbx-bar" id="lbxBar"></div>
+  </div>
+</div>
 <button class="topfab" id="topfab" aria-label="Kembali ke atas"><svg class="ic" viewBox="0 0 24 24"><path d="M12 19V5m0 0-6 6m6-6 6 6"/></svg></button>
 
-<script>try{var t=localStorage.getItem('nq_theme');if(t==='dark')document.documentElement.setAttribute('data-theme','dark')}catch(e){}</script>
-<!-- Data hasil publikasi admin (belum ada? otomatis pakai default bawaan) -->
+<script>try{if(localStorage.getItem('nq_theme')==='dark')document.documentElement.setAttribute('data-theme','dark')}catch(e){}</script>
 <script>window.NEWS=null;window.SITEDATA=null;</script>
 <script src="news.js"></script>
 <script src="site-data.js"></script>
@@ -416,7 +448,7 @@ body.lock{overflow:hidden}
 "use strict";
 var $=function(s){return document.querySelector(s)};
 function esc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;")}
-function rich(s){return esc(s).replace(/&lt;em&gt;/g,"<em>").replace(/&lt;\/em&gt;/g,"</em>").replace(/&lt;br&gt;/g,"<br>")}
+function rich(s){return esc(s).replace(/&lt;em&gt;/g,"<em>").replace(/&lt;\/em&gt;/g,"</em>").replace(/&lt;br&gt;/g,"<br>").replace(/&amp;amp;/g,"&amp;")}
 function today(off){var d=new Date();if(off)d.setDate(d.getDate()+off);return d.toISOString().slice(0,10)}
 function fmt(d,opt){try{return new Date(d+"T00:00:00").toLocaleDateString("id-ID",opt||{day:"numeric",month:"long",year:"numeric"})}catch(e){return d}}
 function ic(n){return '<svg class="ic" viewBox="0 0 24 24">'+({
@@ -433,13 +465,14 @@ pin:'<path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="1
 ig:'<rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".9"/>',
 fb:'<path d="M14 8.5V7a2 2 0 0 1 2-2h1.5V2H15a5 5 0 0 0-5 5v1.5H7.5V12H10v10h4V12h2.6l.9-3.5z"/>',
 yt:'<rect x="2.5" y="5.5" width="19" height="13" rx="3"/><path d="m10 9 5.5 3L10 15z"/>',
+pdf:'<path d="M6 3.5h8L19 8.5V20a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 5 20V5a1.5 1.5 0 0 1 1-1.5z"/><path d="M13.5 3.5v5h5M9 13h6M9 16.5h6"/>',
 check:'<path d="M20 6 9 17l-5-5"/>'
 })[n]+'</svg>'}
 
 /* ═══ DEFAULT ═══ */
 var DEF_SD={
   profile:{nama:"Yayasan Nurul Qur'an",tagline:"Membentuk generasi Qur'ani yang berilmu, berakhlak mulia, dan bermanfaat bagi agama, bangsa, dan masyarakat",
-    hero:{judul:"Membentuk Generasi <em>Qur'ani</em> yang Berilmu &amp; Berakhlak Mulia",sub:"Yayasan Nurul Qur'an di Lendang Simbe, Mertak Tombok, Praya, Lombok Tengah — membina santri melalui Tahfidz, Tilawah, serta Khat & Qira'atul Kutub dalam lingkungan yang asri, disiplin, dan penuh keberkahan.",foto:""},
+    hero:{judul:"Membentuk Generasi <em>Qur'ani</em> yang Berilmu & Berakhlak Mulia",sub:"Yayasan Nurul Qur'an di Lendang Simbe, Mertak Tombok, Praya, Lombok Tengah — membina santri melalui Tahfidz, Tilawah, serta Khat & Qira'atul Kutub dalam lingkungan yang asri, disiplin, dan penuh keberkahan.",foto:""},
     visi:"Membentuk generasi Qur'ani yang berilmu, berakhlak mulia, dan bermanfaat bagi agama, bangsa, dan masyarakat.",
     misi:["Menyelenggarakan pendidikan Al-Qur'an (tahfidz & tilawah) secara terarah dan terukur.","Membina akhlak santri melalui keteladanan, kedisiplinan, dan pembiasaan ibadah harian.","Mendalami ilmu-ilmu keislaman melalui khat & qira'atul kutub dan kajian kitab.","Mengembangkan kemandirian dan keterampilan hidup santri.","Membangun kerja sama dengan masyarakat, wali santri, alumni, dan instansi terkait."],
     sejarah:"Yayasan Nurul Qur'an berdiri sejak tahun 2004 di Lendang Simbe, Desa Mertak Tombok, Kecamatan Praya, Kabupaten Lombok Tengah, Nusa Tenggara Barat. Berawal dari kegiatan pengajian dan pembinaan Al-Qur'an bagi anak-anak di sekitar pesantren, lembaga ini terus bertumbuh menjadi pusat pendidikan Al-Qur'an yang membina santri dari berbagai daerah dengan semangat menjaga, menghafal, dan mengamalkan Al-Qur'an.",
@@ -450,12 +483,12 @@ var DEF_SD={
     syarat:["Mengisi formulir pendaftaran (datang langsung ke sekretariat)","Fotokopi ijazah / SKL","Fotokopi Kartu Keluarga & Akta Kelahiran","Pas foto terbaru","Surat keterangan sehat"],
     catatan:"Informasi lengkap PPDB dapat ditanyakan langsung kepada panitia."},
   gallery:[{judul:"Halaqah Tahfidz Pagi",foto:"",yt:""},{judul:"Haflah Khatmul Qur'an",foto:"",yt:""},{judul:"Kegiatan Santri",foto:"",yt:""},{judul:"Lingkungan Pesantren",foto:"",yt:""}],
-  settings:{email:"",phone:"",address:"Lendang Simbe, Desa Mertak Tombok, Kec. Praya, Kab. Lombok Tengah, NTB",maps:"",ig:"",fb:"",yt:"",donasi:{bank:"",norek:"",an:"",qris:""}}
+  settings:{siteUrl:"https://nurulquranlombok.vercel.app",email:"",phone:"",address:"Lendang Simbe, Desa Mertak Tombok, Kec. Praya, Kab. Lombok Tengah, NTB",maps:"",ig:"",fb:"",yt:"",donasi:{bank:"",norek:"",an:"",qris:""}}
 };
-var DEF_NEWS=[{id:"d1",tanggal:today(),kategori:"Pengumuman",judul:"Website Resmi Yayasan Nurul Qur'an Aktif",penulis:"Humas Nurul Qur'an",foto:"",tampil:true,
+var DEF_NEWS=[{id:"d1",tanggal:today(),kategori:"Pengumuman",judul:"Website Resmi Yayasan Nurul Qur'an Aktif",penulis:"Humas Nurul Qur'an",foto:"",pdf:"",tampil:true,
   ringkasan:"Situs resmi Yayasan Nurul Qur'an kini aktif — berita kegiatan, agenda, PPDB santri baru, dan informasi pesantren akan diperbarui melalui halaman ini.",
   isi:"Assalamu'alaikum warahmatullahi wabarakatuh.\n\nSitus resmi Yayasan Nurul Qur'an, Lendang Simbe, Mertak Tombok, Praya, Lombok Tengah, NTB, resmi aktif. Melalui situs ini masyarakat dapat memperoleh informasi mengenai program pendidikan Al-Qur'an, agenda kegiatan, penerimaan santri baru, dan kabar kegiatan pesantren.\n\nSeluruh informasi resmi akan diperbarui secara berkala oleh pengelola. Barakallahu fiikum."},
- {id:"d2",tanggal:today(-14),kategori:"Kegiatan",judul:"Kegiatan Pendidikan Al-Qur'an Berjalan di Yayasan Nurul Qur'an",penulis:"Humas Nurul Qur'an",foto:"",tampil:true,
+ {id:"d2",tanggal:today(-14),kategori:"Kegiatan",judul:"Kegiatan Pendidikan Al-Qur'an Berjalan di Yayasan Nurul Qur'an",penulis:"Humas Nurul Qur'an",foto:"",pdf:"",tampil:true,
   ringkasan:"Kegiatan tahfidz, tilawah, dan khat & qira'atul kutub santri berjalan rutin di kompleks pesantren, Lendang Simbe, Praya.",
   isi:"Alhamdulillah, kegiatan pendidikan Al-Qur'an di Yayasan Nurul Qur'an berjalan dengan lancar. Santri mengikuti halaqah tahfidz pagi dan sore, setoran tilawah, serta kajian khat & qira'atul kutub di bawah bimbingan para asatidz.\n\nKegiatan ini merupakan bagian dari pembinaan rutin untuk membentuk generasi Qur'ani yang berilmu dan berakhlak mulia.\n\nDokumentasi kegiatan dapat dilihat pada bagian galeri di situs ini."}];
 
@@ -464,6 +497,15 @@ var D=window.SITEDATA||DEF_SD;
 var NEWS=((window.NEWS&&window.NEWS.length)?window.NEWS:DEF_NEWS).filter(function(n){return n.tampil!==false})
   .sort(function(a,b){return b.tanggal.localeCompare(a.tanggal)});
 var P=D.profile, ST=D.settings||{}, PP=D.ppdb||{}, DN=ST.donasi||{};
+var GAL=(D.gallery||[]);
+
+/* ═══ MARQUEE ═══ */
+(function(){
+  var items=(D.programs||[]).map(function(p){return p.judul.toUpperCase()});
+  items.unshift("PPDB SANTRI BARU "+(PP.tahun||""));items.push("BERITA RESMI","GALERI KEGIATAN");
+  var g='<div class="mq-g">'+items.map(function(t){return '<span>'+esc(t)+"</span><i></i>"}).join('')+'</div>';
+  $('#mqTrack').innerHTML=g+g;
+})();
 
 /* ═══ RENDER ═══ */
 document.title=P.nama+" — Pendidikan & Tahfidz Al-Qur'an, Praya Lombok Tengah NTB";
@@ -475,16 +517,13 @@ document.title=P.nama+" — Pendidikan & Tahfidz Al-Qur'an, Praya Lombok Tengah 
  $('#ttMisi').innerHTML=(P.misi||[]).map(function(m){return '<li>'+ic('check')+'<span>'+esc(m)+'</span></li>'}).join('');
  $('#ttSejarah').textContent=P.sejarah||'';
 if(P.hero&&P.hero.foto)$('#heroBg').innerHTML='<img src="'+esc(P.hero.foto)+'" alt="">';
-/* stats — sembunyikan yang 0 */
 var st=P.stats||{}, items=[];
 if(st.santri)items.push(["Santri Aktif",st.santri]);
 if(st.ustadz)items.push(["Asatidz",st.ustadz]);
 if(st.alumni)items.push(["Alumni",st.alumni]);
 if(st.berdiri)items.push(["Berdiri Tahun",st.berdiri]);
  $('#stats').innerHTML=items.length?items.map(function(x){return '<div class="stat"><b data-n="'+x[1]+'">'+(x[1]>2000?x[1]:'0')+'</b><span>'+x[0]+'</span></div>'}).join(''):'';
-/* topbar */
  $('#tbTahun').textContent=PP.tahun||'';$('#tbStatus').textContent=PP.status||'';
-/* program */
  $('#pGrid').innerHTML=(D.programs||[]).map(function(p){return '<div class="pcard" data-io><span class="pic">'+ic(p.ic||'quran')+'</span><h3>'+esc(p.judul)+'</h3><p>'+esc(p.desk)+'</p></div>'}).join('');
 /* ppdb */
 var stat=(PP.status||'').toLowerCase();
@@ -515,15 +554,15 @@ var AG=(D.agenda||[]).slice().sort(function(a,b){return a.tanggal.localeCompare(
   +'<div><strong>'+esc(a.judul)+'</strong><small>'+esc(a.waktu||'')+(a.tempat?' · '+esc(a.tempat):'')+'</small></div></div>'}).join('')
   :'<div style="padding:30px;text-align:center;color:var(--mut);border:1.5px dashed var(--line);border-radius:18px">Belum ada agenda.</div>';
 /* galeri */
- $('#gGrid').innerHTML=(D.gallery||[]).map(function(g,i){
+ $('#gGrid').innerHTML=GAL.map(function(g,i){
   return '<figure class="gf" data-g="'+i+'">'
     +(g.yt?'<span class="vp"><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M10 8.5l6 3.5-6 3.5z"/></svg></span>':'')
-    +(g.foto?'<img src="'+esc(g.foto)+'" alt="'+esc(g.judul)+'">':'<span class="ph">'+ic('img')+'</span>')
+    +(g.foto?'<img src="'+esc(g.foto)+'" alt="'+esc(g.judul)+'" loading="lazy">':'<span class="ph">'+ic('img')+'</span>')
     +'<figcaption class="cap">'+esc(g.judul)+'</figcaption></figure>'}).join('');
 /* donasi */
 var adaRek=!!(DN.bank||DN.norek);
 if(adaRek){$('#rekBox').style.display='';$('#donBankLbl').textContent=DN.bank?'':'Rekening';$('#donBank').textContent=DN.bank||'';$('#donBank').style.display=DN.bank?'':'none';
-  $('#donRek').textContent=DN.norek?'No. Rek: '+DN.norek:'';$('#donAn').textContent=DN.an?'a.n. '+DN.an:'';}
+  $('#donRek').textContent=DN.norek?'No. Rek: '+DN.norek:'';$('#donAn').textContent=DN.an?'a.n. '+DN.an:''}
 if(DN.qris){$('#qrisWrap').style.display='';$('#qrisImg').src=DN.qris}
 if(!adaRek&&!DN.qris){$('#donSub').textContent="InsyaAllah informasi donasi resmi akan segera diperbarui. Untuk sementara, silakan hubungi pengelola pesantren langsung."}
 if(adaRek&&DN.norek){$('#btnCopy').addEventListener('click',function(){var t=(DN.norek||'').replace(/\s/g,'');
@@ -546,32 +585,51 @@ if(ST.address)kon+='<a>'+ic('pin')+esc(ST.address)+'</a>';
  $('#ftAddr').textContent=ST.address||'';
 if(ST.maps&&ST.maps.indexOf('http')===0){$('#ftMap').innerHTML='<iframe src="'+esc(ST.maps)+'" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'}
 
-/* ═══ READER MODAL ═══ */
+/* ═══ READER ═══ */
 document.addEventListener('click',function(e){
   var o=e.target.closest('[data-open]');if(o){var n=null;NEWS.forEach(function(x){if(x.id===o.dataset.open)n=x});if(n)openReader(n)}
-  var g=e.target.closest('[data-g]');if(g)openLbx(D.gallery[+g.dataset.g])});
+  var g=e.target.closest('[data-g]');if(g)openLbxAt(+g.dataset.g)});
 function openReader(n){var paras=(n.isi||'').split(/\n\s*\n/).map(function(p){return '<p>'+esc(p)+'</p>'}).join('');
   $('#nrdBox').innerHTML='<button class="nrd-close" id="nrdX" aria-label="Tutup"><svg class="ic" viewBox="0 0 24 24" style="width:16px;height:16px"><path d="M18 6 6 18M6 6l12 12"/></svg></button>'
     +'<div class="nrd-hero">'+(n.foto?'<img src="'+esc(n.foto)+'" alt="">':'')
     +'<span class="nrd-chip">'+esc(n.kategori)+'</span><h2>'+esc(n.judul)+'</h2>'
     +'<div class="nrd-meta">'+fmt(n.tanggal)+' · '+esc(n.penulis||'Humas')+'</div></div>'
-    +'<div class="nrd-body">'+paras+'</div>';
+    +'<div class="nrd-body">'+paras
+    +(n.pdf?'<a class="pdfbtn" href="'+esc(n.pdf)+'" target="_blank" rel="noopener">'+ic('pdf')+' Buka Lampiran (PDF)</a>':'')
+    +'</div>';
   $('#nrd').classList.add('open');document.body.classList.add('lock');
   $('#nrdX').addEventListener('click',closeReader)}
 function closeReader(){$('#nrd').classList.remove('open');document.body.classList.remove('lock')}
  $('#nrd').addEventListener('click',function(e){if(e.target===this)closeReader()});
-/* ═══ LIGHTBOX ═══ */
+
+/* ═══ LIGHTBOX DENGAN NAVIGASI ‹ › ═══ */
+var lbxIdx=-1;
 function ytId(u){var m=String(u||'').match(/(?:youtu\.be\/|v=|embed\/|shorts\/)([\w-]{11})/);return m?m[1]:''}
-function openLbx(g){if(!g)return;
-  var y=ytId(g.yt);
+function openLbxAt(i){if(!GAL.length)return;
+  lbxIdx=((i%GAL.length)+GAL.length)%GAL.length;
+  var g=GAL[lbxIdx],y=ytId(g.yt);
   $('#lbxBox').innerHTML=y?'<iframe src="https://www.youtube.com/embed/'+y+'" allowfullscreen title="'+esc(g.judul)+'"></iframe>'
     :(g.foto?'<img src="'+esc(g.foto)+'" alt="'+esc(g.judul)+'">':'');
-  $('#lbxBar').innerHTML='<span>'+esc(g.judul)+'</span>';
+  $('#lbxBar').innerHTML='<span>'+esc(g.judul)+'</span><small>'+(lbxIdx+1)+' / '+GAL.length+'</small>';
   $('#lbx').classList.add('open');document.body.classList.add('lock')}
-function closeLbx(){$('#lbx').classList.remove('open');$('#lbxBox').innerHTML='';document.body.classList.remove('lock')}
+function closeLbx(){$('#lbx').classList.remove('open');$('#lbxBox').innerHTML='';document.body.classList.remove('lock');lbxIdx=-1}
  $('#lbxX').addEventListener('click',closeLbx);
+ $('#lbxPrev').addEventListener('click',function(e){e.stopPropagation();openLbxAt(lbxIdx-1)});
+ $('#lbxNext').addEventListener('click',function(e){e.stopPropagation();openLbxAt(lbxIdx+1)});
  $('#lbx').addEventListener('click',function(e){if(e.target===this)closeLbx()});
-document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeReader();closeLbx()}});
+document.addEventListener('keydown',function(e){
+  if($('#lbx').classList.contains('open')){
+    if(e.key==='Escape')closeLbx();
+    if(e.key==='ArrowLeft')openLbxAt(lbxIdx-1);
+    if(e.key==='ArrowRight')openLbxAt(lbxIdx+1);
+  }else if(e.key==='Escape')closeReader()});
+
+/* ═══ BUKA ARTIKEL DARI SHARE WA (b/slug.html → #b=slug) ═══ */
+(function(){var m=location.hash.match(/^#b=([a-z0-9-]+)/i);if(!m)return;
+function nSlug(s){var t=String(s).toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"");
+  if(t.length>60){t=t.slice(0,60);var c=t.lastIndexOf("-");if(c>10)t=t.slice(0,c)}return t}
+for(var i=0;i<NEWS.length;i++){if(nSlug(NEWS[i].judul)===m[1]){openReader(NEWS[i]);
+  try{history.replaceState(null,'',location.pathname)}catch(e){}break}}})();
 
 /* ═══ COUNT UP + REVEAL ═══ */
 var io=new IntersectionObserver(function(es){es.forEach(function(en){if(!en.isIntersecting)return;
