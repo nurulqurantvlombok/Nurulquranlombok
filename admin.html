@@ -30,18 +30,15 @@ h2 small{font-weight:400;color:var(--mut)}
 .side nav button .ic{width:17px;height:17px}
 .icb .ic{width:15px;height:15px}
 .btn .ic{width:15px;height:15px}
-/* ─── LOGIN DENGAN FOTO LATAR ─── */
 #login{min-height:100vh;display:grid;place-items:center;position:relative;padding:24px;overflow:hidden;background:var(--d2)}
 .lbg{position:absolute;inset:0;z-index:0}
 .lbg img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
-.lbg::after{content:"";position:absolute;inset:0;
-  background:linear-gradient(205deg,rgba(15,61,46,.68) 0%,rgba(11,46,35,.86) 55%,rgba(7,33,25,.94) 100%)}
-.lcard{position:relative;z-index:1;background:rgba(255,255,255,.985);border-radius:22px;padding:32px 32px 26px;width:min(400px,100%);
-  border-top:4px solid var(--g);box-shadow:0 40px 90px rgba(0,0,0,.5);animation:lup .55s cubic-bezier(.16,1,.3,1) both}
+.lbg::after{content:"";position:absolute;inset:0;background:linear-gradient(205deg,rgba(15,61,46,.68) 0%,rgba(11,46,35,.86) 55%,rgba(7,33,25,.94) 100%)}
+.lcard{position:relative;z-index:1;background:rgba(255,255,255,.985);border-radius:22px;padding:32px 32px 26px;width:min(400px,100%);border-top:4px solid var(--g);box-shadow:0 40px 90px rgba(0,0,0,.5);animation:lup .55s cubic-bezier(.16,1,.3,1) both}
 @keyframes lup{from{opacity:0;transform:translateY(18px) scale(.985)}to{opacity:1;transform:none}}
-.llogos{display:flex;justify-content:center;align-items:center;gap:18px;margin-bottom:16px}
+.llogos{display:flex;justify-content:center;margin-bottom:16px}
 .llogos img{height:64px;width:auto;object-fit:contain;filter:drop-shadow(0 3px 8px rgba(16,25,19,.18))}
-.lcard h1{font-family:Sora,sans-serif;font-size:19px;text-align:center;color:var(--d);letter-spacing:-.01em;margin-bottom:4px}
+.lcard h1{font-family:Sora,sans-serif;font-size:19px;text-align:center;color:var(--d);margin-bottom:4px}
 .lsub{display:flex;align-items:center;gap:10px;justify-content:center;margin-bottom:20px}
 .lsub::before,.lsub::after{content:"";height:1px;width:44px;background:var(--line)}
 .lsub span{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.26em;text-transform:uppercase;color:var(--g);font-weight:600}
@@ -52,7 +49,7 @@ h2 small{font-weight:400;color:var(--mut)}
 .peye{position:absolute;right:5px;top:50%;transform:translateY(-50%);width:36px;height:36px;display:grid;place-items:center;color:#7A8A80;border-radius:9px}
 .peye:hover{background:var(--soft);color:var(--d)}
 .peye svg{width:19px;height:19px}
-.lfoot{margin-top:18px;text-align:center;font-size:10.5px;color:var(--mut);letter-spacing:.02em}
+.lfoot{margin-top:18px;text-align:center;font-size:10.5px;color:var(--mut)}
 #app{display:none;min-height:100vh}
 .shell{display:flex;min-height:100vh}
 .side{width:212px;flex:none;background:linear-gradient(180deg,#0F3D2E,#0A2C21);color:#fff;display:flex;flex-direction:column;position:sticky;top:0;height:100vh}
@@ -96,11 +93,9 @@ h2 small{font-weight:400;color:var(--mut)}
 .stat .st-top span{font-size:15px;width:32px;height:32px;border-radius:10px;background:var(--soft);color:var(--acc-d);display:grid;place-items:center}
 .stat h2{font-size:23px!important;margin:0}
 .stat p{font-size:11.5px;color:var(--mut);margin:2px 0 0}
-.note{background:#FBF7EE;border:1.5px dashed var(--g);border-radius:12px;padding:13px 16px;font-size:12px;color:#7A6437;line-height:1.7;margin-bottom:16px}
 .frow{display:flex;gap:8px;align-items:stretch}
 .frow select{flex:1;min-width:0}
 .fprev{display:none;width:100%;max-height:150px;object-fit:cover;border-radius:10px;border:1px solid var(--line);margin-top:8px}
-.fbtns{display:flex;gap:8px;margin-top:8px;flex-wrap:wrap}
 .media-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
 .media-grid figure{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff}
 .media-grid img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:var(--soft)}
@@ -109,7 +104,6 @@ h2 small{font-weight:400;color:var(--mut)}
 .media-grid .mact button{flex:1;border:0;background:var(--soft);color:var(--acc-d);font-size:10px;font-weight:700;padding:7px;cursor:pointer}
 .media-grid .mact button:hover{background:#DDEDE4}
 .media-grid .mact button.del{color:var(--red);background:#FBF0ED}
-.media-grid .mact button.del:hover{background:#F5DAD3}
 .chkline{display:flex;align-items:center;gap:9px;font-size:13px;font-weight:600;margin:12px 0 2px;cursor:pointer}
 .chkline input{width:auto;margin:0;accent-color:var(--acc)}
 .empty{padding:26px;text-align:center;color:var(--mut);font-size:13px;border:1.5px dashed var(--line);border-radius:12px}
@@ -127,12 +121,12 @@ h2 small{font-weight:400;color:var(--mut)}
 </head>
 <body>
 
-<!-- ═══ LOGIN ═══ -->
+<!-- ═══ LOGIN (latar background.png) ═══ -->
 <div id="login">
-  <div class="lbg" aria-hidden="true"><img src="masjid.jpg" alt="" onerror="this.remove()"></div>
+  <div class="lbg" aria-hidden="true"><img src="background.png" alt="" onerror="this.remove()"></div>
   <div class="lcard">
     <div class="llogos">
-      <img src="logo-nurul-quran.png" alt="Logo Nurul Qur'an" onerror="this.outerHTML='<svg class=\'ic\' viewBox=\'0 0 24 24\' style=\'width:56px;height:56px\'><path d=\'M12 2.5c2.3 2.4 3.5 4.4 3.5 5.9 0 1.8-1.5 3.1-3.5 3.1s-3.5-1.3-3.5-3.1c0-1.5 1.2-3.5 3.5-5.9z\'/><path d=\'M4 21v-6.5A3.5 3.5 0 0 1 7.5 11h9a3.5 3.5 0 0 1 3.5 3.5V21\'/><path d=\'M9.5 21v-3a2.5 2.5 0 0 1 5 0v3\'/><path d=\'M2.5 21h19\'/></svg>'">
+      <img src="logo-nurul-quran.png" alt="Logo Nurul Qur'an" onerror="this.outerHTML='<svg class=\'ic\' viewBox=\'0 0 24 24\' style=\'width:56px;height:56px;color:#0F3D2E\'><path d=\'M12 2.5c2.3 2.4 3.5 4.4 3.5 5.9 0 1.8-1.5 3.1-3.5 3.1s-3.5-1.3-3.5-3.1c0-1.5 1.2-3.5 3.5-5.9z\'/><path d=\'M4 21v-6.5A3.5 3.5 0 0 1 7.5 11h9a3.5 3.5 0 0 1 3.5 3.5V21\'/><path d=\'M9.5 21v-3a2.5 2.5 0 0 1 5 0v3\'/><path d=\'M2.5 21h19\'/></svg>'">
     </div>
     <h1>Admin Nurul Qur'an</h1>
     <div class="lsub"><span>Area Terbatas</span></div>
@@ -141,28 +135,18 @@ h2 small{font-weight:400;color:var(--mut)}
       <label for="lPass">Kata Sandi Admin</label>
       <div class="pwrap">
         <input type="password" id="lPass" autocomplete="current-password" placeholder="Masukkan kata sandi" required style="margin-bottom:16px">
-        <button type="button" class="peye" id="lEye" aria-label="Tampilkan kata sandi">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2.04 12c1.39-4.28 5.32-7.3 9.96-7.3s8.57 3.02 9.96 7.3c-1.39 4.28-5.32 7.3-9.96 7.3S3.43 16.28 2.04 12z"/><circle cx="12" cy="12" r="3"/></svg>
-        </button>
+        <button type="button" class="peye" id="lEye" aria-label="Tampilkan kata sandi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2.04 12c1.39-4.28 5.32-7.3 9.96-7.3s8.57 3.02 9.96 7.3c-1.39 4.28-5.32 7.3-9.96 7.3S3.43 16.28 2.04 12z"/><circle cx="12" cy="12" r="3"/></svg></button>
       </div>
       <button class="btn" style="width:100%;justify-content:center" type="submit">Masuk ke Dashboard</button>
     </form>
     <form id="sForm" style="display:none">
       <div class="err" id="sErr"></div>
       <label for="sPass">Kata Sandi Baru</label>
-      <div class="pwrap">
-        <input type="password" id="sPass" autocomplete="new-password" placeholder="minimal 6 karakter" required style="margin-bottom:14px">
-        <button type="button" class="peye" data-eye="sPass" aria-label="Tampilkan kata sandi">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2.04 12c1.39-4.28 5.32-7.3 9.96-7.3s8.57 3.02 9.96 7.3c-1.39 4.28-5.32 7.3-9.96 7.3S3.43 16.28 2.04 12z"/><circle cx="12" cy="12" r="3"/></svg>
-        </button>
-      </div>
+      <div class="pwrap"><input type="password" id="sPass" autocomplete="new-password" placeholder="minimal 6 karakter" required style="margin-bottom:14px">
+      <button type="button" class="peye" data-eye="sPass" aria-label="Tampilkan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2.04 12c1.39-4.28 5.32-7.3 9.96-7.3s8.57 3.02 9.96 7.3c-1.39 4.28-5.32 7.3-9.96 7.3S3.43 16.28 2.04 12z"/><circle cx="12" cy="12" r="3"/></svg></button></div>
       <label for="sPass2">Ulangi Kata Sandi</label>
-      <div class="pwrap">
-        <input type="password" id="sPass2" autocomplete="new-password" placeholder="ulangi kata sandi" required style="margin-bottom:16px">
-        <button type="button" class="peye" data-eye="sPass2" aria-label="Tampilkan kata sandi">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2.04 12c1.39-4.28 5.32-7.3 9.96-7.3s8.57 3.02 9.96 7.3c-1.39 4.28-5.32 7.3-9.96 7.3S3.43 16.28 2.04 12z"/><circle cx="12" cy="12" r="3"/></svg>
-        </button>
-      </div>
+      <div class="pwrap"><input type="password" id="sPass2" autocomplete="new-password" placeholder="ulangi kata sandi" required style="margin-bottom:16px">
+      <button type="button" class="peye" data-eye="sPass2" aria-label="Tampilkan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2.04 12c1.39-4.28 5.32-7.3 9.96-7.3s8.57 3.02 9.96 7.3c-1.39 4.28-5.32 7.3-9.96 7.3S3.43 16.28 2.04 12z"/><circle cx="12" cy="12" r="3"/></svg></button></div>
       <button class="btn" style="width:100%;justify-content:center" type="submit">Buat Sandi &amp; Masuk</button>
     </form>
     <p class="lfoot">© <span id="lY"></span> Yayasan Nurul Qur'an — Praya, Lombok Tengah</p>
@@ -196,7 +180,6 @@ h2 small{font-weight:400;color:var(--mut)}
       <button class="btn sm ghost" id="btnOut">Keluar</button>
     </div>
 
-    <!-- DASHBOARD -->
     <div class="view on" id="v-dash">
       <h2>Dashboard</h2>
       <div class="row" style="grid-template-columns:repeat(auto-fit,minmax(150px,1fr))">
@@ -207,7 +190,7 @@ h2 small{font-weight:400;color:var(--mut)}
         <div class="card stat" style="margin:0"><div class="st-top"><span><svg class="ic" viewBox="0 0 24 24"><path d="M4 8a2 2 0 0 1 2-2h2l1.5-2h5L16 6h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8z"/><circle cx="12" cy="13" r="3.5"/></svg></span><h2 id="cM">0</h2></div><p>Media</p></div>
       </div>
       <div class="card" style="margin-top:16px"><h2>Alur Kerja</h2>
-        <p style="font-size:13px;color:#33453B;line-height:1.8">1. Isi konten di menu samping → <b>Simpan</b>. Foto otomatis diunggah ke repo GitHub.<br>2. Klik <b>Publikasikan</b> → data &amp; halaman artikel ditulis ke repo.<br>3. Vercel otomatis memperbarui website ±1 menit.<br><br><b>Tips:</b> setelah ganti perangkat/HP, klik <b>Pengaturan → Tarik Data Terbaru</b> agar konten tersinkron.</p>
+        <p style="font-size:13px;color:#33453B;line-height:1.8">1. Isi konten di menu samping → <b>Simpan</b>.<br>2. Klik <b>Publikasikan</b> → data ditulis ke repo GitHub (file news.js &amp; site-data.js dibuat otomatis).<br>3. Vercel memperbarui website ±1 menit.<br><br><b>Tips:</b> buka admin dari HP/perangkat lain? Klik <b>Pengaturan → Tarik Data Terbaru</b>.</p>
       </div>
     </div>
 
@@ -232,7 +215,7 @@ h2 small{font-weight:400;color:var(--mut)}
           <input type="file" accept="image/*" hidden data-file="nF">
         </div>
         <img class="fprev" id="nPrev" alt="">
-        <label>Lampiran PDF <small>(opsional — cth: SK, jadwal tes; maks 4 MB)</small></label>
+        <label>Lampiran PDF <small>(opsional — maks 4 MB)</small></label>
         <div class="frow">
           <input id="nPdf" readonly placeholder="belum ada lampiran">
           <button type="button" class="btn sm gold" data-uppdf="nPdf"><svg class="ic" viewBox="0 0 24 24"><path d="M12 16V5m0 0 4.5 4.5M12 5 7.5 9.5"/><path d="M5 19h14"/></svg> Upload PDF</button>
@@ -263,7 +246,7 @@ h2 small{font-weight:400;color:var(--mut)}
     <!-- PROGRAM -->
     <div class="view" id="v-program">
       <h2>Program Pendidikan</h2>
-      <p class="vsub">Kartu-kartu program yang tampil di website.</p>
+      <p class="vsub">Kartu program yang tampil di website.</p>
       <div id="pzList"></div>
       <div style="display:flex;gap:9px;margin-top:12px">
         <button class="btn" id="pzAdd"><svg class="ic" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg> Tambah Program</button>
@@ -287,8 +270,8 @@ h2 small{font-weight:400;color:var(--mut)}
           <div><label>Kuota</label><input id="pKuota" placeholder="cth: 100 santri"></div>
           <div><label>Biaya Pendaftaran</label><input id="pBiaya" placeholder="cth: Rp 150.000"></div>
         </div>
-        <label>Nomor WhatsApp Panitia <small>(format 62…, cth: 6281234567890)</small></label><input id="pWa" placeholder="6281234567890">
-        <label>Langkah / Syarat Pendaftaran <small>(satu per baris)</small></label><textarea id="pSyarat" style="min-height:120px"></textarea>
+        <label>Nomor WhatsApp Panitia <small>(format 62…)</small></label><input id="pWa" placeholder="6281234567890">
+        <label>Langkah / Syarat <small>(satu per baris)</small></label><textarea id="pSyarat" style="min-height:120px"></textarea>
         <label>Catatan Tambahan</label><textarea id="pCatatan" style="min-height:60px"></textarea>
         <button class="btn gold" id="ppSave" style="margin-top:14px"><svg class="ic" viewBox="0 0 24 24"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><path d="M17 21v-8H7v8M7 3v5h8"/></svg> Simpan PPDB</button>
       </div>
@@ -297,10 +280,19 @@ h2 small{font-weight:400;color:var(--mut)}
     <!-- GALERI -->
     <div class="view" id="v-gallery">
       <h2>Galeri</h2>
-      <button class="btn" id="btnAddGa" style="margin-bottom:14px"><svg class="ic" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg> Tambah Foto/Video</button>
+      <div class="card" style="margin-bottom:16px"><h2>Tools Galeri</h2>
+        <div style="display:flex;gap:9px;flex-wrap:wrap">
+          <button class="btn" id="btnAddGa"><svg class="ic" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg> Tambah Manual</button>
+          <button class="btn gold" id="gaImport"><svg class="ic" viewBox="0 0 24 24"><path d="M12 4v11m0 0 4.5-4.5M12 15 7.5 10.5M5 19h14"/></svg> Impor foto dari repo</button>
+        </div>
+        <p style="font-size:11.5px;color:var(--mut);margin-top:9px"><b>Impor foto dari repo</b>: memindai semua file .jpg/.png di repo (mis. <code>galeri (1).jpg</code> s/d <code>galeri (30).jpg</code>) lalu menambahkannya sebagai item galeri. Judul awal = nama file, bisa diedit.</p>
+        <hr style="border:0;border-top:1px solid var(--line);margin:14px 0">
+        <input type="file" id="gaBatch" accept="image/*" multiple style="padding:9px">
+        <button class="btn gold" id="gaBatchUp" style="margin-top:10px"><svg class="ic" viewBox="0 0 24 24"><path d="M12 16V5m0 0 4.5 4.5M12 5 7.5 9.5"/><path d="M5 19h14"/></svg> Upload foto komputer → Galeri</button>
+      </div>
       <div class="formwrap card" id="gaForm">
         <label>Judul *</label><input id="gJ" placeholder="cth: Halaqah Pagi Tahsin">
-        <label>Foto <small>(pilih dari Media atau upload langsung)</small></label>
+        <label>Foto <small>(pilih dari Media atau upload)</small></label>
         <div class="frow">
           <select id="gF"></select>
           <button type="button" class="btn sm gold" data-up="gF"><svg class="ic" viewBox="0 0 24 24"><path d="M12 16V5m0 0 4.5 4.5M12 5 7.5 9.5"/><path d="M5 19h14"/></svg> Upload</button>
@@ -309,11 +301,7 @@ h2 small{font-weight:400;color:var(--mut)}
         <img class="fprev" id="gPrev" alt="">
         <label>atau Link YouTube <small>(opsional)</small></label><input id="gV" placeholder="https://youtu.be/…">
         <div style="display:flex;gap:9px;margin-top:15px"><button class="btn gold" id="gaSave"><svg class="ic" viewBox="0 0 24 24"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><path d="M17 21v-8H7v8M7 3v5h8"/></svg> Simpan</button><button class="btn ghost" id="gaCancel">Batal</button></div>
-      </div> <div class="card" style="margin-bottom:16px"><h2>Upload Banyak Foto Sekaligus → Galeri</h2>
-  <input type="file" id="gaBatch" accept="image/*" multiple style="padding:9px">
-  <button class="btn gold" id="gaBatchUp" style="margin-top:12px">Upload Semua ke Galeri</button>
-  <p style="font-size:11.5px;color:var(--mut);margin-top:9px">Setiap foto otomatis menjadi 1 item galeri dengan judul "Kegiatan — 1", dst. Judul bisa diedit setelahnya.</p>
-</div>
+      </div>
       <div id="gaList"></div>
     </div>
 
@@ -324,7 +312,7 @@ h2 small{font-weight:400;color:var(--mut)}
         <h2>Upload Foto ke Website</h2>
         <input type="file" id="mFile" accept="image/*" multiple style="padding:9px">
         <button class="btn gold" id="mUp" style="margin-top:12px"><svg class="ic" viewBox="0 0 24 24"><path d="M12 16V5m0 0 4.5 4.5M12 5 7.5 9.5"/><path d="M5 19h14"/></svg> Upload ke Website</button>
-        <p style="font-size:11.5px;color:var(--mut);margin-top:9px">JPG/PNG/WebP — otomatis dikompres. Bisa pilih banyak sekaligus. Tersimpan di <code>assets/img/</code> repo GitHub.</p>
+        <p style="font-size:11.5px;color:var(--mut);margin-top:9px">Tersimpan di <code>assets/img/</code> repo GitHub — otomatis dikompres.</p>
       </div>
       <div class="card"><h2>Foto Tersedia</h2><div id="mList" class="media-grid"></div></div>
     </div>
@@ -338,10 +326,10 @@ h2 small{font-weight:400;color:var(--mut)}
         <label>Tagline</label><input id="fTagline">
       </div>
       <div class="card">
-        <h2>Teks Hero <small>(judul besar halaman depan)</small></h2>
-        <label>Judul <small>(boleh pakai &lt;em&gt; untuk aksen emas, &lt;br&gt; untuk baris baru)</small></label><input id="hzJ">
+        <h2>Teks Hero</h2>
+        <label>Judul <small>(boleh pakai &lt;em&gt; untuk aksen emas)</small></label><input id="hzJ">
         <label>Paragraf Pengantar</label><textarea id="hzS" style="min-height:70px"></textarea>
-        <label>Foto Latar Hero <small>(foto gedung/kampus — kosongkan untuk memakai foto masjid.jpg bawaan)</small></label>
+        <label>Foto Latar Hero <small>(kosongkan = pakai background.png bawaan)</small></label>
         <div class="frow">
           <select id="hF"></select>
           <button type="button" class="btn sm gold" data-up="hF"><svg class="ic" viewBox="0 0 24 24"><path d="M12 16V5m0 0 4.5 4.5M12 5 7.5 9.5"/><path d="M5 19h14"/></svg> Upload</button>
@@ -356,7 +344,7 @@ h2 small{font-weight:400;color:var(--mut)}
         <label>Sejarah Singkat</label><textarea id="fSejarah" style="min-height:120px"></textarea>
       </div>
       <div class="card">
-        <h2>Statistik <small>(angka 0 otomatis disembunyikan di website)</small></h2>
+        <h2>Statistik <small>(0 = disembunyikan di website)</small></h2>
         <div class="row">
           <div><label>Jumlah Santri</label><input type="number" id="fSantri"></div>
           <div><label>Jumlah Ustadz/Ustadzah</label><input type="number" id="fUstadz"></div>
@@ -374,13 +362,13 @@ h2 small{font-weight:400;color:var(--mut)}
       <h2>Pengaturan</h2>
       <div class="card">
         <h2>Koneksi GitHub</h2>
-        <label>Personal Access Token <small>(fine-grained, hanya repo ini, Contents: Read and write)</small></label>
+        <label>Personal Access Token <small>(fine-grained, repo ini, Contents: Read and write)</small></label>
         <input type="password" id="ghTok" placeholder="github_pat_…">
         <div class="row">
-          <div><label>Pemilik Repo</label><input id="ghOwn" placeholder="nurulquranlombok"></div>
-          <div><label>Nama Repo</label><input id="ghRepo" placeholder="nurul-quran-website"></div>
+          <div><label>Pemilik Repo</label><input id="ghOwn" value="nurulquranlombok"></div>
+          <div><label>Nama Repo</label><input id="ghRepo" value="nurulquranlombok"></div>
         </div>
-        <label>Branch</label><input id="ghBranch" placeholder="main">
+        <label>Branch</label><input id="ghBranch" value="main">
         <div style="display:flex;gap:9px;margin-top:12px;flex-wrap:wrap">
           <button class="btn" id="ghSave">Simpan Koneksi</button>
           <button class="btn ghost" id="ghPull"><svg class="ic" viewBox="0 0 24 24"><path d="M12 4v11m0 0 4.5-4.5M12 15 7.5 10.5M5 19h14"/></svg> Tarik Data Terbaru dari GitHub</button>
@@ -388,8 +376,8 @@ h2 small{font-weight:400;color:var(--mut)}
       </div>
       <div class="card">
         <h2>Identitas Website</h2>
-        <label>URL Website <small>(untuk halaman share WhatsApp — tanpa garis miring di akhir)</small></label>
-        <input id="sSite" placeholder="https://nurulquranlombok.vercel.app">
+        <label>URL Website <small>(tanpa garis miring di akhir)</small></label>
+        <input id="sSite" value="https://nurulquranlombok.vercel.app">
         <button class="btn gold sm" id="siteSave" style="margin-top:12px">Simpan URL</button>
       </div>
       <div class="card">
@@ -463,7 +451,9 @@ function confirmBox(msg){return new Promise(function(resolve){var ov=document.ge
   ov.onclick=function(e){if(e.target===ov)done(false)};
   document.getElementById('dlgYes').focus()})}
 
-/* ═══ DATA DEFAULT ═══ */
+/* ═══ DATA DEFAULT (galeri = 30 foto repo) ═══ */
+var GAL_DEF=[];
+for(var gi=1;gi<=30;gi++){GAL_DEF.push({id:'gd'+gi,judul:'Kegiatan '+gi,foto:'galeri ('+gi+').jpg',yt:''})}
 var DEF={
   profile:{nama:"Yayasan Nurul Qur'an",tagline:"Membentuk generasi Qur'ani yang berilmu, berakhlak mulia, dan bermanfaat bagi agama, bangsa, dan masyarakat",
     hero:{judul:"Membentuk Generasi <em>Qur'ani</em> yang Berilmu & Berakhlak Mulia",sub:"Yayasan Nurul Qur'an di Lendang Simbe, Mertak Tombok, Praya, Lombok Tengah — membina santri melalui Tahfidz, Tilawah, serta Khat & Qira'atul Kutub dalam lingkungan yang asri, disiplin, dan penuh keberkahan.",foto:""},
@@ -484,11 +474,11 @@ var DEF={
   ppdb:{status:"Segera",tahun:"2026/2027",mulai:today(7),selesai:today(60),kuota:"",biaya:"",wa:"",
     syarat:["Mengisi formulir pendaftaran (datang langsung ke sekretariat)","Fotokopi ijazah / SKL","Fotokopi Kartu Keluarga & Akta Kelahiran","Pas foto terbaru","Surat keterangan sehat"],
     catatan:"Informasi lengkap PPDB dapat ditanyakan langsung kepada panitia."},
-  gallery:[{id:"g1",judul:"Halaqah Tahfidz Pagi",foto:"",yt:""},{id:"g2",judul:"Haflah Khatmul Qur'an",foto:"",yt:""},{id:"g3",judul:"Kegiatan Santri",foto:"",yt:""},{id:"g4",judul:"Lingkungan Pesantren",foto:"",yt:""}],
+  gallery:GAL_DEF,
   news:[
     {id:"n1",tanggal:today(),kategori:"Pengumuman",judul:"Website Resmi Yayasan Nurul Qur'an Aktif",penulis:"Humas Nurul Qur'an",foto:"",pdf:"",tampil:true,
      ringkasan:"Situs resmi Yayasan Nurul Qur'an kini aktif — berita kegiatan, agenda, PPDB santri baru, dan informasi pesantren akan diperbarui melalui halaman ini.",
-     isi:"Assalamu'alaikum warahmatullahi wabarakatuh.\n\nSitus resmi Yayasan Nurul Qur'an, Lendang Simbe, Mertak Tombok, Praya, Lombok Tengah, NTB, resmi aktif. Melalui situs ini masyarakat dapat memperoleh informasi mengenai program pendidikan Al-Qur'an, agenda kegiatan, penerimaan santri baru, dan kabar kegiatan pesantren.\n\nSeluruh informasi resmi akan diperbarui secara berkala oleh pengelola. Barakallahu fiikum."}],
+     isi:"Assalamu'alaikum warahmatullahi wabarakatuh.\n\nSitus resmi Yayasan Nurul Qur'an, Lendang Simbe, Mertak Tombok, Praya, Lombok Tengah, NTB, resmi aktif.\n\nSeluruh informasi resmi akan diperbarui secara berkala oleh pengelola. Barakallahu fiikum."}],
   media:[],
   settings:{siteUrl:"https://nurulquranlombok.vercel.app",email:"",phone:"",address:"Lendang Simbe, Desa Mertak Tombok, Kec. Praya, Kab. Lombok Tengah, NTB",maps:"",ig:"",fb:"",yt:"",donasi:{bank:"",norek:"",an:"",qris:""}}
 };
@@ -510,19 +500,17 @@ pdf:'<path d="M6 3.5h8L19 8.5V20a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 5 20V5a
 pen:'<path d="M17 3.5a2.1 2.1 0 0 1 3 3L8 18.5 3.5 20l1.5-4.5z"/>',
 trash:'<path d="M4 7h16"/><path d="M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/><path d="M6 7v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7"/><path d="M10 11v6M14 11v6"/>',
 cal:'<rect x="4" y="5.5" width="16" height="15" rx="2"/><path d="M8 3.5v4M16 3.5v4M4 10.5h16"/>',
-copy:'<rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/>',
-up:'<path d="M12 16V5m0 0 4.5 4.5M12 5 7.5 9.5"/><path d="M5 19h14"/>'
+copy:'<rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/>'
 })[n]+'</svg>'}
 
-/* ═══ STATE ═══ */
-var S={data:JSON.parse(JSON.stringify(DEF)),gh:{token:"",owner:"nurulquranlombok",repo:"",branch:"main"},editNews:null,editAg:null,editGa:null};
+var S={data:JSON.parse(JSON.stringify(DEF)),gh:{token:"",owner:"nurulquranlombok",repo:"nurulquranlombok",branch:"main"},editNews:null,editAg:null,editGa:null};
 function load(){try{var d=lsG('nq_data');if(d)S.data=JSON.parse(d)}catch(e){}
   try{var g=lsG('nq_gh');if(g)S.gh=JSON.parse(g)}catch(e){}
   if(!S.data.media)S.data.media=[];
+  if(!S.data.gallery||!S.data.gallery.length)S.data.gallery=JSON.parse(JSON.stringify(GAL_DEF));
   (S.data.news||[]).forEach(function(n){if(!n.id)n.id=uid()})}
 function save(){lsS('nq_data',JSON.stringify(S.data));refreshAll()}
 
-/* ═══ LOGIN (tanpa catatan setup) ═══ */
 function showSetup(on){$('#lForm').style.display=on?'none':'block';$('#sForm').style.display=on?'block':'none'}
  $('#lForm').addEventListener('submit',async function(e){e.preventDefault();
   var h=lsG('nq_pw');if(!h){showSetup(true);return}
@@ -538,7 +526,6 @@ function enter(){$('#login').style.display='none';$('#app').style.display='block
  $('#btnOut').addEventListener('click',function(){sessionStorage.removeItem('nq_adm');location.reload()});
 if(sessionStorage.getItem('nq_adm')==='1')enter();
  $('#lY').textContent=new Date().getFullYear();
-/* toggle mata sandi (semua tombol .peye) */
 document.querySelectorAll('.peye').forEach(function(b){
   b.addEventListener('click',function(){
     var p=document.getElementById(b.dataset.eye||'lPass');
@@ -549,12 +536,10 @@ document.querySelectorAll('.peye').forEach(function(b){
       :'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2.04 12c1.39-4.28 5.32-7.3 9.96-7.3s8.57 3.02 9.96 7.3c-1.39 4.28-5.32 7.3-9.96 7.3S3.43 16.28 2.04 12z"/><circle cx="12" cy="12" r="3"/></svg>';
     p.focus()})});
 
-/* ═══ NAV ═══ */
  $('#sideNav').addEventListener('click',function(e){var b=e.target.closest('[data-v]');if(!b)return;
   $$('#sideNav button').forEach(function(x){x.classList.toggle('on',x===b)});
   $$('.view').forEach(function(v){v.classList.toggle('on',v.id==='v-'+b.dataset.v)})});
 
-/* ═══ KOMPRES & UPLOAD ═══ */
 function fileToData(file,max,q){return new Promise(function(res,rej){
   if(!/^image\/(jpeg|png|webp)$/.test(file.type)){rej(new Error('Format harus JPG/PNG/WebP'));return}
   var img=new Image(),url=URL.createObjectURL(file);
@@ -565,24 +550,23 @@ function fileToData(file,max,q){return new Promise(function(res,rej){
   img.onerror=function(){URL.revokeObjectURL(url);rej(new Error('Gagal membaca gambar'))};
   img.src=url})}
 
-/* ═══ GITHUB API ═══ */
 function ghOK(){return !!(S.gh.token&&S.gh.owner&&S.gh.repo)}
 function ghStatus(){var el=$('#ghStatus');
   if(ghOK()){el.textContent='GitHub: terhubung · '+S.gh.repo;el.className='st ok'}
   else{el.textContent='GitHub: belum terhubung — atur di Pengaturan';el.className='st no'}}
 function b64u(s){var b=new TextEncoder().encode(s),o='';for(var i=0;i<b.length;i++)o+=String.fromCharCode(b[i]);return btoa(o)}
 function d64u(b){var s=atob(b.replace(/\s/g,'')),a=new Uint8Array(s.length);for(var i=0;i<s.length;i++)a[i]=s.charCodeAt(i);return new TextDecoder().decode(a)}
-async function ghGet(path){var r=await fetch('https://api.github.com/repos/'+S.gh.owner+'/'+S.gh.repo+'/contents/'+path+'?ref='+S.gh.branch,{headers:{Authorization:'Bearer '+S.gh.token,Accept:'application/vnd.github+json'}});
+async function ghGet(path){var r=await fetch('https://api.github.com/repos/'+S.gh.owner+'/'+S.gh.repo+'/contents/'+encodeURI(path)+'?ref='+S.gh.branch,{headers:{Authorization:'Bearer '+S.gh.token,Accept:'application/vnd.github+json'}});
   if(!r.ok)throw new Error('GitHub '+r.status);return r.json()}
 async function ghPut(path,content,msg,isB64){
   var sha=null;try{var j=await ghGet(path);sha=j.sha}catch(e){}
   var body={message:msg,content:isB64?content:b64u(content),branch:S.gh.branch};if(sha)body.sha=sha;
-  var r=await fetch('https://api.github.com/repos/'+S.gh.owner+'/'+S.gh.repo+'/contents/'+path,
+  var r=await fetch('https://api.github.com/repos/'+S.gh.owner+'/'+S.gh.repo+'/contents/'+encodeURI(path),
     {method:'PUT',headers:{Authorization:'Bearer '+S.gh.token,Accept:'application/vnd.github+json','Content-Type':'application/json'},body:JSON.stringify(body)});
   if(!r.ok){var e=await r.json().catch(function(){return{}});throw new Error(e.message||('GitHub '+r.status))}
   return r.json()}
 async function ghDel(path,msg){var sha=null;try{var j=await ghGet(path);sha=j.sha}catch(e){return}
-  var r=await fetch('https://api.github.com/repos/'+S.gh.owner+'/'+S.gh.repo+'/contents/'+path,
+  var r=await fetch('https://api.github.com/repos/'+S.gh.owner+'/'+S.gh.repo+'/contents/'+encodeURI(path),
     {method:'DELETE',headers:{Authorization:'Bearer '+S.gh.token,Accept:'application/vnd.github+json','Content-Type':'application/json'},
      body:JSON.stringify({message:msg,sha:sha,branch:S.gh.branch})});
   if(!r.ok&&r.status!==404)throw new Error('GitHub '+r.status)}
@@ -596,7 +580,7 @@ async function uploadImageFile(file){
     if(S.data.media.indexOf(name)<0){S.data.media.push(name);save()}
     return 'assets/img/'+name;
   }
-  toast('GitHub belum terhubung — foto disematkan lokal dulu. Hubungkan GitHub agar permanen.',true);
+  toast('GitHub belum terhubung — foto disematkan lokal sementara.',true);
   return dataUrl;
 }
 async function uploadPdfFile(file){
@@ -635,12 +619,10 @@ document.addEventListener('change',async function(e){
   catch(err){toast('Gagal: '+err.message,true)}
   if(btn)btnUnbusy(btn)});
 
-/* ═══ RENDER ═══ */
 function refreshAll(){renderDash();renderNews();renderAgenda();renderPrograms();renderGallery();renderMedia();fillProfil();fillPpdb();fillSettings();fillPickers()}
 function renderDash(){$('#cN').textContent=S.data.news.filter(function(n){return n.tampil!==false}).length;
   $('#cA').textContent=S.data.agenda.length;$('#cP').textContent=S.data.programs.length;$('#cG').textContent=S.data.gallery.length;$('#cM').textContent=S.data.media.length}
 
-/* BERITA */
 function openNewsForm(n){S.editNews=n?n.id:null;
   $('#nfTitle').textContent=n?'Edit Berita':'Tulis Berita Baru';
   $('#nT').value=n?n.tanggal:today();$('#nC').value=n?n.kategori:'Kegiatan';
@@ -677,7 +659,6 @@ function renderNews(){var l=S.data.news;
   if(ed){var n=null;S.data.news.forEach(function(x){if(x.id===ed.dataset.ned)n=x});if(n)openNewsForm(n)}
   if(de&&await confirmBox('Hapus berita ini secara permanen?')){S.data.news=S.data.news.filter(function(x){return x.id!==de.dataset.ndel});save()}});
 
-/* AGENDA */
 function openAgForm(a){S.editAg=a?a.id:null;
   $('#aT').value=a?a.tanggal:today();$('#aW').value=a?(a.waktu||''):'';$('#aJ').value=a?a.judul:'';$('#aP').value=a?(a.tempat||''):'';
   $('#agForm').classList.add('on');$('#agForm').scrollIntoView({behavior:'smooth'})}
@@ -703,7 +684,6 @@ function renderAgenda(){var l=S.data.agenda.slice().sort(function(a,b){return a.
   if(ed){var a=null;S.data.agenda.forEach(function(x){if(x.id===ed.dataset.aed)a=x});if(a)openAgForm(a)}
   if(de&&await confirmBox('Hapus agenda ini?')){S.data.agenda=S.data.agenda.filter(function(x){return x.id!==de.dataset.adel});save()}});
 
-/* PROGRAM */
 function icOpts(cur){return PROG_ICONS.map(function(p){return '<option value="'+p[0]+'"'+(p[0]===cur?' selected':'')+'>'+p[1]+'</option>'}).join('')}
 function renderPrograms(){$('#pzList').innerHTML=S.data.programs.map(function(p,i){
   return '<div class="pzrow"><button class="icb del" data-pdel="'+i+'" title="Hapus">'+ic('trash')+'</button>'
@@ -720,7 +700,6 @@ function renderPrograms(){$('#pzList').innerHTML=S.data.programs.map(function(p,
   var rows=$$('#pzList .pzrow');if(rows.length)rows[rows.length-1].scrollIntoView({behavior:'smooth'})});
  $('#pzSave').addEventListener('click',function(){S.data.programs=S.data.programs.filter(function(p){return p.judul.trim()});save();toast('Program disimpan.')});
 
-/* PPDB */
 function fillPpdb(){var p=S.data.ppdb;
   $('#pStatus').value=p.status||'Segera';$('#pTahun').value=p.tahun||'';$('#pMulai').value=p.mulai||'';$('#pSelesai').value=p.selesai||'';
   $('#pKuota').value=p.kuota||'';$('#pBiaya').value=p.biaya||'';$('#pWa').value=p.wa||'';
@@ -730,11 +709,11 @@ function fillPpdb(){var p=S.data.ppdb;
   syarat:$('#pSyarat').value.split('\n').map(function(s){return s.trim()}).filter(Boolean),catatan:$('#pCatatan').value.trim()};
   save();toast('PPDB disimpan.')});
 
-/* GALERI */
 function openGaForm(g){S.editGa=g?g.id:null;
   $('#gJ').value=g?g.judul:'';$('#gV').value=g?(g.yt||''):'';
-  fillPickers();$('#gF').value=g?(g.foto||''):'';
-  $('#gPrev').style.display='none';
+  fillPickers();
+  if(g&&g.foto&&g.foto.indexOf('assets/img/')===0){$('#gF').value=g.foto;$('#gPrev').src=g.foto;$('#gPrev').style.display='block'}
+  else{if(g&&g.foto){$('#gPrev').src=g.foto;$('#gPrev').style.display='block'}else{$('#gF').value='';$('#gPrev').style.display='none'}}
   $('#gaForm').classList.add('on');$('#gaForm').scrollIntoView({behavior:'smooth'})}
 function closeGaForm(){$('#gaForm').classList.remove('on');S.editGa=null}
  $('#btnAddGa').addEventListener('click',function(){openGaForm(null)});
@@ -750,16 +729,46 @@ function closeGaForm(){$('#gaForm').classList.remove('on');S.editGa=null}
 function renderGallery(){var l=S.data.gallery;
   $('#gaList').innerHTML=l.length?('<div class="nal">'+l.map(function(g){
     return '<div class="nal-item"><div class="nal-th">'+(g.foto?'<img src="'+esc(g.foto)+'" alt="">':(g.yt?ic('video'):ic('img')))+'</div>'
-      +'<div class="nal-body"><div class="nal-title">'+esc(g.judul)+(g.yt?' <span class="badge">Video</span>':'')+'</div></div>'
+      +'<div class="nal-body"><div class="nal-title">'+esc(g.judul)+(g.yt?' <span class="badge">Video</span>':'')+'</div>'
+      +'<div class="nal-meta">'+esc(g.foto||g.yt||'')+'</div></div>'
       +'<button class="icb" data-ged="'+g.id+'">'+ic('pen')+'</button>'
       +'<button class="icb del" data-gdel="'+g.id+'">'+ic('trash')+'</button></div>'}).join('')+'</div>')
     :'<div class="empty">Belum ada item galeri.</div>'}
  $('#gaList').addEventListener('click',async function(e){
   var ed=e.target.closest('[data-ged]'),de=e.target.closest('[data-gdel]');
   if(ed){var g=null;S.data.gallery.forEach(function(x){if(x.id===ed.dataset.ged)g=x});if(g)openGaForm(g)}
-  if(de&&await confirmBox('Hapus item galeri ini?')){S.data.gallery=S.data.gallery.filter(function(x){return x.id!==de.dataset.gdel});save()}});
+  if(de&&await confirmBox('Hapus item galeri ini? (foto di repo tidak ikut terhapus)')){S.data.gallery=S.data.gallery.filter(function(x){return x.id!==de.dataset.gdel});save()}});
 
-/* MEDIA */
+/* IMPOR FOTO DARI REPO (galeri*.jpg dll di root) */
+ $('#gaImport').addEventListener('click',async function(){
+  if(!ghOK()){toast('Hubungkan GitHub dulu di Pengaturan.',true);return}
+  var b=this;btnBusy(b,'Memindai…');
+  try{
+    var j=await ghGet('');
+    var names=j.filter(function(x){return x.type==='file'&&/\.(jpg|jpeg|png|webp)$/i.test(x.name)}).map(function(x){return x.name});
+    names.sort(function(a,c){var na=parseInt(a.replace(/\D/g,''),10)||0,nc=parseInt(c.replace(/\D/g,''),10)||0;return na-nc});
+    var imported=0;
+    names.forEach(function(nm){
+      if(/^(logo|background)/i.test(nm))return;
+      var exists=S.data.gallery.some(function(g){return g.foto===nm});
+      if(!exists){S.data.gallery.push({id:uid(),judul:nm.replace(/\.[^.]+$/,''),foto:nm,yt:''});imported++}
+    });
+    btnUnbusy(b);save();
+    toast(imported>0?imported+' foto diimpor ke galeri.':'Semua foto sudah ada di galeri.');
+  }catch(e){btnUnbusy(b);toast('Gagal: '+e.message,true)}});
+
+/* UPLOAD BATCH KOMPUTER → GALERI */
+ $('#gaBatchUp').addEventListener('click',async function(){
+  var files=$('#gaBatch').files;if(!files.length){toast('Pilih foto dulu.',true);return}
+  var b=this;btnBusy(b,'Mengunggah…');var ok=0;
+  for(var i=0;i<files.length;i++){
+    try{var p=await uploadImageFile(files[i]);
+      S.data.gallery.push({id:uid(),judul:'Kegiatan — '+(S.data.gallery.length+1),foto:p,yt:''});ok++}
+    catch(e){}
+  }
+  $('#gaBatch').value='';btnUnbusy(b);save();
+  toast(ok+' foto ditambahkan ke galeri. Edit judulnya di daftar bawah.')});
+
 function renderMedia(){var l=S.data.media;
   $('#mList').innerHTML=l.length?l.slice().reverse().map(function(n){
     return '<figure><img src="assets/img/'+esc(n)+'" alt="" loading="lazy"><figcaption>'+esc(n)+'</figcaption>'
@@ -790,7 +799,6 @@ async function refreshMediaFromRepo(){
       names.forEach(function(n){if(S.data.media.indexOf(n)<0)S.data.media.push(n)});save()}}
   catch(e){}}
 
-/* PROFIL */
 function fillProfil(){var p=S.data.profile;
   $('#fNama').value=p.nama||'';$('#fTagline').value=p.tagline||'';
   $('#hzJ').value=p.hero?p.hero.judul:'';$('#hzS').value=p.hero?p.hero.sub:'';
@@ -810,7 +818,6 @@ function fillProfil(){var p=S.data.profile;
   p.stats={santri:+$('#fSantri').value||0,ustadz:+$('#fUstadz').value||0,alumni:+$('#fAlumni').value||0,berdiri:+$('#fTahun').value||0};
   save();toast('Profil disimpan.')});
 
-/* PENGATURAN */
 function fillSettings(){var g=S.gh,s=S.data.settings;
   $('#ghTok').value=g.token||'';$('#ghOwn').value=g.owner||'';$('#ghRepo').value=g.repo||'';$('#ghBranch').value=g.branch||'main';
   $('#sSite').value=s.siteUrl||'';
@@ -836,7 +843,6 @@ function fillSettings(){var g=S.gh,s=S.data.settings;
   if(v.length<6){toast('Minimal 6 karakter.',true);return}
   lsS('nq_pw',await sha256(v));$('#pwNew').value='';toast('Kata sandi diperbarui.')});
 
-/* ═══ TARIK DATA ═══ */
 function extractJSON(txt,varName){
   var k=txt.indexOf('window.'+varName);if(k<0)throw new Error('Data '+varName+' tidak ditemukan');
   var eq=txt.indexOf('=',k);if(eq<0)throw new Error('Format file tidak valid');
@@ -864,14 +870,13 @@ function extractJSON(txt,varName){
       okS=true}}catch(e){console.warn(e.message)}
   btnUnbusy(b);save();
   if(okN||okS)toast('Data terbaru berhasil ditarik dari GitHub.');
-  else toast('Tidak ada data yang bisa ditarik — periksa koneksi / belum pernah publikasi.',true)});
+  else toast('Tidak ada data yang bisa ditarik — belum pernah publikasi?',true)});
 
-/* ═══ PUBLIKASI ═══ */
 function nSlug(s){var t=String(s).toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"");
   if(t.length>60){t=t.slice(0,60);var cut=t.lastIndexOf("-");if(cut>10)t=t.slice(0,cut)}return t}
 function articlePage(n,slug,site){
   var img=String(n.foto||"");
-  if(img&&img.indexOf("http")!==0&&img.indexOf("data:")!==0)img=site+"/"+img;
+  if(img&&img.indexOf("http")!==0&&img.indexOf("data:")!==0)img=site+"/"+encodeURI(img);
   if(!img)img=site+"/logo-nurul-quran.png";
   var u=site+"/b/"+slug, back=site+"/#b="+slug;
   var t=esc(n.judul), d=esc(n.ringkasan||"Berita resmi Yayasan Nurul Qur'an.");
