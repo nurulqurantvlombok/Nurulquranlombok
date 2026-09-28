@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yayasan Nurul Qur'an — Lembaga Pendidikan & Tahfidz Al-Qur'an, Praya Lombok Tengah NTB</title>
+<meta name="description" content="Yayasan Nurul Qur'an di Lendang Simbe, Mertak Tombok, Praya, Lombok Tengah, NTB. Berdiri sejak 2004, membentuk generasi Qur'ani yang berilmu, berakhlak mulia, dan bermanfaat bagi agama, bangsa, dan masyarakat.">
+<meta name="theme-color" content="#0F3D2E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Yayasan Nurul Qur'an — Praya, Lombok Tengah NTB">
+<meta property="og:description" content="Tahfidz, Tilawah, Khat & Qira'atul Kutub. Membentuk generasi Qur'ani yang berilmu dan berakhlak mulia.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230F3D2E'/%3E%3Cpath d='M32 14c5 5.2 7.5 9.4 7.5 12.6 0 3.8-3.2 6.6-7.5 6.6s-7.5-2.8-7.5-6.6c0-3.2 2.5-7.4 7.5-12.6z' fill='%23C6A15B'/%3E%3Crect x='16' y='38' width='32' height='10' rx='2' fill='none' stroke='%23C6A15B' stroke-width='3'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&family=Noto+Naskh+Arabic:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F7F9F8;--ink:#101913;--mut:#5C6B62;--acc:#16794B;--acc-d:#0F5C38;--gold:#C6A15B;--gold-d:#A9833F;--dark:#0F3D2E;--card:#fff;--line:rgba(16,25,19,.09);--sh:0 1px 2px rgba(16,25,19,.04),0 16px 40px rgba(16,25,19,.08);--sh-lg:0 24px 64px rgba(16,25,19,.16);--r:18px;--ease:cubic-bezier(.16,1,.3,1);--fd:'Sora',sans-serif;--fb:'Plus Jakarta Sans',sans-serif;--fm:'JetBrains Mono',monospace;--head-h:68px}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--fb);font-size:15.5px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none;overflow-wrap:break-word}
+button{font:inherit;border:0;background:none;cursor:pointer;color:inherit}
+ul,ol{list-style:none}
+::selection{background:var(--acc);color:#fff}
+.ic{width:1em;height:1em;flex:none;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.ar{font-family:'Noto Naskh Arabic',serif}
+.wrap{max-width:1180px;margin-inline:auto;padding-inline:clamp(18px,4.5vw,44px)}
+section{padding-block:clamp(42px,5vw,72px);scroll-margin-top:calc(var(--head-h) + 12px)}
+.sec-alt{background:var(--card);border-block:1px solid var(--line)}
+.grain{position:fixed;inset:0;z-index:300;pointer-events:none;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+html[data-theme="dark"]{--bg:#0C1611;--ink:#E6F0E9;--mut:#9CB3A5;--card:#12211A;--line:rgba(255,255,255,.1)}
+html[data-theme="dark"] .nav .bar{background:rgba(12,22,17,.9)}
+html[data-theme="dark"] .sec-alt{background:rgba(18,33,26,.6)}
+/* HEADER */
+.topbar{background:var(--dark);color:rgba(255,255,255,.85);font-family:var(--fm);font-size:10px;letter-spacing:.14em;text-transform:uppercase;display:flex;justify-content:center;gap:10px;padding:7px 14px;text-align:center;flex-wrap:wrap}
+.topbar b{color:var(--gold)}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100}
+.nav .bar{height:var(--head-h);background:rgba(247,249,248,.88);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.nav .bar .wrap{height:100%;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.logo{display:inline-flex;align-items:center;gap:10px}
+.logo .lg{width:44px;height:44px;border-radius:50%;background:#fff;border:1.5px solid var(--line);display:grid;place-items:center;flex:none;box-shadow:0 3px 8px rgba(16,25,19,.12);overflow:hidden;color:var(--dark)}
+.logo .lg .ic{width:22px;height:22px}
+.logo .lg img{width:100%;height:100%;object-fit:contain;grid-area:1/1}
+.logo .lg .ic,.logo .lg img{grid-area:1/1}
+.logo .word{font-family:var(--fd);font-weight:700;font-size:15px;line-height:1.1}
+.logo .word i{font-style:normal;color:var(--acc)}
+.logo .word small{display:block;font-family:var(--fb);font-weight:600;font-size:9px;letter-spacing:.1em;color:var(--mut);text-transform:uppercase;margin-top:2px}
+.nav-links{display:flex;gap:clamp(10px,1.7vw,20px)}
+.nav-links a{font-size:13.5px;font-weight:600;color:var(--mut);padding:6px 0;white-space:nowrap;position:relative}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;width:100%;height:2px;background:var(--acc);border-radius:2px;transform:scaleX(0);transform-origin:right;transition:transform .35s var(--ease)}
+.nav-links a:hover{color:var(--ink)}
+.nav-links a:hover::after{transform:scaleX(1);transform-origin:left}
+.nav-acts{display:flex;gap:8px;align-items:center}
+.hbtn{width:42px;height:42px;border:1px solid var(--line);border-radius:11px;background:var(--card);display:grid;place-items:center;transition:.2s}
+.hbtn:hover{border-color:var(--gold);color:var(--gold-d)}
+.hbtn .ic{width:17px;height:17px}
+.nav-toggle{display:none}
+@media(max-width:960px){.nav-links{display:none;position:absolute;top:var(--head-h);left:0;right:0;background:var(--card);border-bottom:1px solid var(--line);flex-direction:column;gap:0;padding:8px 24px 14px;box-shadow:var(--sh-lg);z-index:50}
+.nav.open .nav-links{display:flex}.nav-links a{padding:13px 0;border-bottom:1px solid var(--line);font-size:15px}.nav-links a:last-child{border-bottom:0}.nav-links a::after{display:none}.nav-toggle{display:grid}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:var(--acc);color:#fff;font-weight:700;font-size:14px;min-height:46px;padding:10px 22px;border-radius:999px;transition:.2s;box-shadow:0 4px 14px rgba(15,61,46,.16)}
+.btn:hover{background:var(--acc-d);transform:translateY(-2px)}
+.btn.gold{background:var(--gold);color:#2E240E;box-shadow:0 6px 18px rgba(198,161,91,.35)}
+.btn.gold:hover{background:var(--gold-d);color:#fff}
+.btn.ghost-w{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.32);box-shadow:none}
+.btn.ghost-w:hover{border-color:#fff;background:transparent}
+.btn.big{min-height:52px;padding:12px 28px;font-size:15px}
+.btn .ic{width:16px;height:16px}
+/* HERO */
+.hero{position:relative;min-height:min(720px,92svh);display:flex;align-items:center;color:#fff;overflow:hidden;background:linear-gradient(135deg,#14532D,#0B2E23)}
+.hero-bg{position:absolute;inset:0;z-index:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cg fill='none' stroke='%23C6A15B' stroke-width='1'%3E%3Crect x='18' y='18' width='36' height='36'/%3E%3Crect x='18' y='18' width='36' height='36' transform='rotate(45 36 36)'/%3E%3C/g%3E%3C/svg%3E");opacity:.1}
+.hero-bg img{width:100%;height:100%;object-fit:cover;opacity:.9}
+.hero-ov{position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(11,46,35,.96) 0%,rgba(11,46,35,.84) 40%,rgba(11,46,35,.5) 75%,rgba(11,46,35,.32) 100%),linear-gradient(0deg,rgba(11,46,35,.9) 0%,transparent 45%)}
+.hero .wrap{position:relative;z-index:2;width:100%;padding-block:clamp(48px,7vw,90px)}
+.basmalah{text-align:center;font-size:clamp(17px,2.2vw,24px);color:var(--gold);margin-bottom:clamp(22px,3vw,36px)}
+.hbrand{display:inline-flex;align-items:center;gap:14px;font-family:var(--fd);font-weight:800;font-size:clamp(13px,1.6vw,17px);letter-spacing:.14em;text-transform:uppercase;margin-bottom:18px}
+.hbrand::after{content:"";width:36px;height:2px;background:var(--gold)}
+h1{font-family:var(--fd);font-size:clamp(30px,4.6vw,54px);line-height:1.12;font-weight:800;letter-spacing:-.03em;color:#fff;text-wrap:balance;max-width:22ch}
+h1 em{font-style:normal;color:var(--gold)}
+.hero-sub{margin-top:16px;font-size:clamp(14px,1.5vw,17px);color:rgba(255,255,255,.78);max-width:58ch}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.stats{margin-top:clamp(30px,4vw,48px);display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.14);border-radius:16px;overflow:hidden}
+.stat{background:rgba(11,46,35,.55);backdrop-filter:blur(6px);padding:18px 16px}
+.stat b{font-family:var(--fd);font-size:clamp(22px,2.6vw,30px);font-weight:800;color:var(--gold);display:block}
+.stat span{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.65)}
+/* SECTION HEAD */
+.shead{margin-bottom:clamp(20px,2.6vw,32px)}
+.s-kick{display:inline-flex;align-items:center;gap:9px;font-family:var(--fm);font-weight:600;font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--acc);margin-bottom:8px}
+.s-kick::before{content:"";width:8px;height:8px;background:var(--acc)}
+.s-kick.gold{color:var(--gold-d)}.s-kick.gold::before{background:var(--gold)}
+.shead h2{font-family:var(--fd);font-size:clamp(22px,2.8vw,32px);font-weight:800;letter-spacing:-.02em;line-height:1.2}
+.shead p{color:var(--mut);margin-top:8px;max-width:60ch}
+/* TENTANG */
+.about{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(20px,3.5vw,48px)}
+.visi{background:var(--dark);color:#fff;border-radius:var(--r);padding:clamp(22px,3vw,32px);position:relative;overflow:hidden}
+.visi::before{content:"";position:absolute;inset:0;opacity:.08;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cg fill='none' stroke='%23ffffff' stroke-width='1.2'%3E%3Crect x='18' y='18' width='36' height='36'/%3E%3Crect x='18' y='18' width='36' height='36' transform='rotate(45 36 36)'/%3E%3C/g%3E%3C/svg%3E")}
+.visi>*{position:relative}
+.visi .ar{color:var(--gold);font-size:19px;margin-bottom:10px}
+.visi h3{font-family:var(--fd);font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+.visi p{color:rgba(255,255,255,.88);font-size:16.5px;line-height:1.75}
+.misi{margin-top:18px}
+.misi li{display:flex;gap:12px;padding:11px 0;border-bottom:1px dashed var(--line);font-size:14.5px}
+.misi li:last-child{border-bottom:0}
+.misi .ic{width:18px;height:18px;color:var(--acc);flex:none;margin-top:3px}
+.sejarah{color:var(--mut);font-size:14.5px;margin-top:14px}
+/* PROGRAM */
+.pgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.pcard{background:var(--bg);border:1px solid var(--line);border-radius:var(--r);padding:clamp(20px,2.2vw,26px);transition:.3s var(--ease)}
+html[data-theme="dark"] .pcard{background:var(--card)}
+.pcard:hover{transform:translateY(-5px);box-shadow:var(--sh-lg)}
+.pcard .pic{width:48px;height:48px;border-radius:13px;background:rgba(22,121,75,.1);color:var(--acc);display:grid;place-items:center;margin-bottom:14px;transition:.25s}
+.pcard:hover .pic{background:var(--acc);color:#fff}
+.pcard .pic .ic{width:22px;height:22px}
+.pcard h3{font-family:var(--fd);font-size:16px;font-weight:700;margin-bottom:6px}
+.pcard p{color:var(--mut);font-size:13.5px;line-height:1.65}
+/* PPDB */
+.ppdb-card{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(20px,3vw,40px);background:var(--dark);color:#fff;border-radius:clamp(20px,2.6vw,28px);padding:clamp(24px,3.4vw,44px);position:relative;overflow:hidden;box-shadow:var(--sh-lg)}
+.ppdb-card::before{content:"";position:absolute;inset:0;opacity:.07;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cg fill='none' stroke='%23C6A15B' stroke-width='1.2'%3E%3Crect x='18' y='18' width='36' height='36'/%3E%3Crect x='18' y='18' width='36' height='36' transform='rotate(45 36 36)'/%3E%3C/g%3E%3C/svg%3E")}
+.ppdb-card>*{position:relative}
+.pp-status{display:inline-flex;align-items:center;gap:8px;font-family:var(--fm);font-weight:600;font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:7px 14px;border-radius:99px;background:var(--gold);color:#2E240E}
+.pp-status.segera{background:rgba(255,255,255,.16);color:#fff}
+.pp-status.tutup{background:rgba(255,255,255,.1);color:rgba(255,255,255,.6)}
+.ppdb-card h3{font-family:var(--fd);font-size:clamp(21px,2.4vw,28px);font-weight:800;margin:14px 0 4px;letter-spacing:-.02em}
+.pp-sub{color:rgba(255,255,255,.65);font-size:13.5px}
+.pp-rows{margin-top:18px;border-top:1px solid rgba(255,255,255,.14)}
+.pp-rows li{display:flex;justify-content:space-between;gap:14px;padding:11px 0;border-bottom:1px solid rgba(255,255,255,.14);font-size:13.5px}
+.pp-rows li span{color:rgba(255,255,255,.5);flex:none}
+.pp-rows li b{font-weight:600;text-align:right;color:rgba(255,255,255,.9)}
+.pp-cta{margin-top:22px;display:flex;gap:10px;flex-wrap:wrap}
+.pp-note{font-size:11.5px;color:rgba(255,255,255,.55);margin-top:14px;line-height:1.7}
+.steps h4{font-family:var(--fd);font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+.steps li{display:flex;gap:14px;padding:10px 0;font-size:14px;color:rgba(255,255,255,.88)}
+.steps .n{width:28px;height:28px;border-radius:50%;background:rgba(198,161,91,.16);border:1px solid rgba(198,161,91,.4);color:var(--gold);font-family:var(--fm);font-weight:600;font-size:12px;display:grid;place-items:center;flex:none;margin-top:1px}
+/* BERITA */
+.bgrid{display:grid;grid-template-columns:1.5fr 1fr;gap:16px}
+.bfeat{position:relative;border-radius:var(--r);overflow:hidden;background:var(--dark);border:1px solid var(--line);cursor:pointer;min-height:340px;display:flex;align-items:flex-end}
+.bfeat .bimg{position:absolute;inset:0;background:linear-gradient(135deg,#14532D,#0B2E23)}
+.bfeat .bimg img{width:100%;height:100%;object-fit:cover;opacity:.92}
+.bfeat .grad{position:absolute;inset:0;background:linear-gradient(to top,rgba(11,46,35,.97) 0%,rgba(11,46,35,.5) 40%,transparent 70%)}
+.bfeat-b{position:relative;z-index:2;padding:clamp(20px,2.4vw,28px);color:#fff;width:100%}
+.bcat{position:absolute;top:16px;left:16px;z-index:2;background:var(--gold);color:#2E240E;font-family:var(--fm);font-weight:600;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;padding:6px 12px;border-radius:8px}
+.bfeat-b time{font-family:var(--fm);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.6)}
+.bfeat-b h3{font-family:var(--fd);font-size:clamp(18px,2vw,24px);font-weight:700;line-height:1.3;margin:8px 0}
+.bfeat-b p{color:rgba(255,255,255,.72);font-size:14px;max-width:56ch}
+.bmini{display:flex;gap:12px;background:var(--bg);border:1px solid var(--line);border-radius:var(--r);padding:12px;align-items:center;cursor:pointer;transition:.25s var(--ease);margin-bottom:10px}
+html[data-theme="dark"] .bmini{background:var(--card)}
+.bmini:hover{transform:translateY(-3px);box-shadow:var(--sh)}
+.bmini .th{width:88px;height:66px;border-radius:10px;overflow:hidden;flex:none;background:rgba(22,121,75,.1);color:var(--acc);display:grid;place-items:center}
+.bmini .th img{width:100%;height:100%;object-fit:cover}
+.bmini h4{font-family:var(--fd);font-size:13.5px;font-weight:600;line-height:1.45;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.bmini:hover h4{color:var(--acc)}
+.bmini small{display:block;margin-top:4px;font-size:11px;color:var(--mut)}
+/* AGENDA */
+.arow{display:flex;gap:16px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;align-items:flex-start;transition:.25s;margin-bottom:12px}
+.arow:hover{border-color:var(--gold);transform:translateY(-2px);box-shadow:var(--sh)}
+.dbox{width:52px;flex:none;text-align:center;background:rgba(22,121,75,.08);border-radius:12px;padding:8px 2px;border-bottom:3px solid var(--gold)}
+.dbox b{display:block;font-family:var(--fd);font-size:20px;font-weight:800;color:var(--dark);line-height:1.1}
+html[data-theme="dark"] .dbox b{color:var(--gold)}
+.dbox span{font-size:9px;font-weight:700;letter-spacing:.12em;color:var(--acc);text-transform:uppercase}
+.arow strong{font-family:var(--fd);font-size:14.5px;font-weight:700;display:block}
+.arow small{font-size:12px;color:var(--mut);display:block;margin-top:3px}
+/* GALERI */
+.ggrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+.gf{position:relative;border-radius:var(--r);aspect-ratio:4/3;overflow:hidden;border:1px solid var(--line);background:linear-gradient(135deg,#14532D,#0B2E23);cursor:pointer}
+.gf img{width:100%;height:100%;object-fit:cover;transition:transform .7s var(--ease)}
+.gf:hover img{transform:scale(1.06)}
+.gf .ph{position:absolute;inset:0;display:grid;place-items:center;color:rgba(198,161,91,.4)}
+.gf .ph .ic{width:34px;height:34px}
+.gf .cap{position:absolute;left:0;right:0;bottom:0;padding:34px 14px 12px;color:#fff;font-family:var(--fd);font-weight:600;font-size:13.5px;background:linear-gradient(transparent,rgba(0,0,0,.78));z-index:2}
+.gf .vp{position:absolute;top:50%;left:50%;translate:-50% -50%;z-index:2;width:48px;height:48px;border-radius:50%;background:rgba(11,46,35,.75);border:1px solid rgba(255,255,255,.5);display:grid;place-items:center;color:#fff;transition:.25s}
+.gf:hover .vp{background:var(--gold);color:#2E240E;border-color:var(--gold)}
+.gf .vp .ic{width:20px;height:20px}
+/* DONASI */
+.don-card{display:grid;grid-template-columns:1fr auto;gap:clamp(20px,3vw,44px);align-items:center;background:var(--dark);color:#fff;border-radius:clamp(20px,2.6vw,28px);padding:clamp(24px,3.4vw,44px);position:relative;overflow:hidden}
+.don-card::before{content:"";position:absolute;inset:0;opacity:.07;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cg fill='none' stroke='%23C6A15B' stroke-width='1.2'%3E%3Crect x='18' y='18' width='36' height='36'/%3E%3Crect x='18' y='18' width='36' height='36' transform='rotate(45 36 36)'/%3E%3C/g%3E%3C/svg%3E")}
+.don-card>*{position:relative}
+.don-card h3{font-family:var(--fd);font-size:clamp(20px,2.4vw,27px);font-weight:800;margin-bottom:8px}
+.don-card .dsub{color:rgba(255,255,255,.7);font-size:14px;max-width:52ch}
+.rek{margin-top:18px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:14px;padding:16px 18px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.rek .rek-info{flex:1;min-width:180px}
+.rek small{display:block;font-family:var(--fm);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:3px}
+.rek b{font-family:var(--fd);font-size:19px;letter-spacing:.06em;color:var(--gold)}
+.rek span{display:block;font-size:12.5px;color:rgba(255,255,255,.75);margin-top:2px}
+.copyb{border:0;background:var(--gold);color:#2E240E;font:inherit;font-weight:700;font-size:12.5px;border-radius:99px;padding:9px 16px;cursor:pointer;display:inline-flex;gap:7px;align-items:center;transition:.2s}
+.copyb:hover{background:var(--gold-d);color:#fff}
+.copyb .ic{width:14px;height:14px}
+.qris{text-align:center}
+.qris img{width:170px;height:170px;object-fit:cover;border-radius:14px;border:3px solid var(--gold);background:#fff}
+.qris small{display:block;margin-top:8px;font-family:var(--fm);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.55)}
+/* FOOTER */
+footer{background:var(--dark);color:#fff;padding:clamp(36px,5vw,60px) 0 0}
+.ft{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:clamp(24px,4vw,56px)}
+.ft h4{font-family:var(--fm);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+.ft .fbrand{display:flex;align-items:center;gap:11px;margin-bottom:12px}
+.ft .fbrand .lg{width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.1);border:1px solid rgba(198,161,91,.4);color:var(--gold);display:grid;place-items:center;overflow:hidden}
+.ft .fbrand .lg .ic,.ft .fbrand .lg img{grid-area:1/1}
+.ft .fbrand .lg .ic{width:22px;height:22px}
+.ft .fbrand .lg img{width:100%;height:100%;object-fit:contain}
+.ft .fbrand b{font-family:var(--fd);font-size:15px}
+.ft p,.ft a{color:rgba(255,255,255,.7);font-size:13.5px;line-height:1.8}
+.ft a{display:flex;align-items:center;gap:10px;padding:5px 0;transition:.2s}
+.ft a:hover{color:var(--gold)}
+.ft a .ic{width:15px;height:15px;color:var(--gold);flex:none}
+.ft-map{margin-top:16px;border-radius:14px;overflow:hidden;border:1px solid rgba(255,255,255,.14);min-height:200px;background:rgba(255,255,255,.05);display:grid;place-items:center;color:rgba(255,255,255,.4);font-size:12px;text-align:center;padding:14px}
+.ft-map iframe{width:100%;height:220px;border:0;display:block}
+.copy{margin-top:clamp(28px,4vw,44px);border-top:1px solid rgba(255,255,255,.1);padding:18px;text-align:center;font-family:var(--fm);font-size:10.5px;letter-spacing:.08em;color:rgba(255,255,255,.45)}
+.copy b{color:var(--gold)}
+/* MODAL READER */
+#nrd{position:fixed;inset:0;z-index:600;display:none;align-items:flex-start;justify-content:center;padding:0 16px;background:rgba(7,17,11,.78);backdrop-filter:blur(6px);overflow:auto}
+#nrd.open{display:flex}
+.nrd-box{background:var(--card);border-radius:20px;max-width:760px;width:100%;margin:5vh auto;box-shadow:0 40px 90px rgba(0,0,0,.5);position:relative;overflow:hidden}
+.nrd-hero{background:linear-gradient(135deg,#14532D,#0B2E23);padding:26px 28px 22px;color:#fff}
+.nrd-hero img{width:100%;height:clamp(200px,34vh,320px);object-fit:cover;border-radius:14px;margin-bottom:16px}
+.nrd-chip{display:inline-block;font-family:var(--fm);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;background:var(--gold);color:#2E240E;padding:4px 11px;border-radius:99px;margin-bottom:10px}
+.nrd-hero h2{font-family:var(--fd);font-size:clamp(17px,2.2vw,22px);font-weight:700;line-height:1.35}
+.nrd-meta{font-family:var(--fm);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.7);margin-top:8px}
+.nrd-close{position:absolute;top:14px;right:14px;width:36px;height:36px;border-radius:50%;background:rgba(11,46,35,.55);color:#fff;display:grid;place-items:center;z-index:2;transition:.2s}
+.nrd-close:hover{background:var(--gold);color:#2E240E}
+.nrd-body{padding:26px 30px 30px}
+.nrd-body p{font-size:15.5px;line-height:1.9;color:var(--ink);margin-bottom:16px}
+html[data-theme="dark"] .nrd-body p{color:#C7D6CC}
+/* LIGHTBOX */
+#lbx{position:fixed;inset:0;z-index:700;display:none;align-items:center;justify-content:center;padding:clamp(14px,3vw,40px);background:rgba(7,17,11,.92);backdrop-filter:blur(6px)}
+#lbx.open{display:flex}
+.lbx-wrap{position:relative;width:min(920px,100%)}
+.lbx-box{background:#000;border-radius:16px;overflow:hidden;box-shadow:0 40px 90px rgba(0,0,0,.6)}
+.lbx-box iframe{width:100%;aspect-ratio:16/9;border:0;display:block}
+.lbx-box img{display:block;max-width:100%;max-height:78vh;margin:0 auto}
+.lbx-bar{display:flex;justify-content:space-between;align-items:center;gap:12px;background:var(--dark);color:#fff;border-radius:0 0 16px 16px;padding:12px 18px;font-weight:600;font-size:13.5px}
+.lbx-x{position:absolute;top:12px;right:12px;z-index:5;width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.14);color:#fff;display:grid;place-items:center;transition:.2s}
+.lbx-x:hover{background:var(--gold);color:#2E240E}
+body.lock{overflow:hidden}
+/* MISC */
+[data-io]{opacity:0;transform:translateY(22px);transition:opacity .8s var(--ease) var(--d,0s),transform .8s var(--ease) var(--d,0s)}
+[data-io].in{opacity:1;transform:none}
+.topfab{position:fixed;right:clamp(14px,2.5vw,24px);bottom:clamp(14px,2.5vw,24px);z-index:90;width:52px;height:52px;border-radius:50%;background:var(--acc);color:#fff;display:grid;place-items:center;box-shadow:0 12px 28px rgba(22,121,75,.42);opacity:0;pointer-events:none;transition:.25s}
+.topfab.on{opacity:1;pointer-events:auto}
+.topfab .ic{width:21px;height:21px}
+@media(max-width:900px){.about,.bgrid,.ppdb-card,.don-card{grid-template-columns:1fr}.ft{grid-template-columns:1fr}.qris{justify-self:center}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}[data-io]{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="topbar">Yayasan Nurul Qur'an · Lendang Simbe, Mertak Tombok, Praya, Lombok Tengah · <b>PPDB <span id="tbTahun"></span>: <span id="tbStatus"></span></b></div>
+  <div class="bar"><div class="wrap">
+    <a class="logo" href="#top" aria-label="Beranda">
+      <span class="lg"><svg class="ic" viewBox="0 0 24 24"><path d="M12 2.5c2.3 2.4 3.5 4.4 3.5 5.9 0 1.8-1.5 3.1-3.5 3.1s-3.5-1.3-3.5-3.1c0-1.5 1.2-3.5 3.5-5.9z"/><path d="M4 21v-6.5A3.5 3.5 0 0 1 7.5 11h9a3.5 3.5 0 0 1 3.5 3.5V21"/><path d="M9.5 21v-3a2.5 2.5 0 0 1 5 0v3"/><path d="M2.5 21h19"/></svg><img src="logo-nurul-quran.png" alt="Logo Nurul Qur'an" onerror="this.remove()"></span>
+      <span class="word">Nurul <i>Qur'an</i><small>Yayasan Pendidikan Al-Qur'an</small></span>
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="Navigasi utama">
+      <a href="#tentang">Tentang</a><a href="#program">Program</a><a href="#ppdb">PPDB</a>
+      <a href="#berita">Berita</a><a href="#agenda">Agenda</a><a href="#galeri">Galeri</a>
+      <a href="#donasi">Donasi</a><a href="#kontak">Kontak</a>
+    </nav>
+    <div class="nav-acts">
+      <button class="hbtn" id="btnDark" aria-label="Mode malam"><svg class="ic" viewBox="0 0 24 24"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg></button>
+      <button class="hbtn nav-toggle" id="navToggle" aria-label="Menu"><svg class="ic" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div></div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top" style="padding-top:var(--head-h)">
+  <div class="hero-bg" id="heroBg"></div>
+  <div class="hero-ov"></div>
+  <div class="wrap">
+    <div class="ar basmalah" lang="ar">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+    <div class="hbrand" id="hName">YAYASAN NURUL QUR'AN</div>
+    <h1 id="heroTitle">Membentuk Generasi <em>Qur'ani</em> yang Berilmu &amp; Berakhlak Mulia</h1>
+    <p class="hero-sub" id="heroSub"></p>
+    <div class="hero-cta">
+      <a class="btn gold big" href="#ppdb"><svg class="ic" viewBox="0 0 24 24"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M9 12h6M9 16h4"/></svg> Daftar Santri Baru</a>
+      <a class="btn ghost-w big" href="#tentang">Profil Pesantren</a>
+    </div>
+    <div class="stats" id="stats"></div>
+  </div>
+</section>
+
+<!-- TENTANG -->
+<section id="tentang">
+  <div class="wrap">
+    <div class="shead" data-io><span class="s-kick">Tentang Kami</span><h2 id="ttNama">Yayasan Nurul Qur'an</h2></div>
+    <div class="about">
+      <div data-io>
+        <div class="visi">
+          <div class="ar" lang="ar">خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ</div>
+          <h3>Visi</h3><p id="ttVisi"></p>
+        </div>
+        <ul class="misi" id="ttMisi"></ul>
+      </div>
+      <div data-io style="--d:.1s">
+        <span class="s-kick">Sejarah Singkat</span>
+        <p class="sejarah" id="ttSejarah"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAM -->
+<section id="program" class="sec-alt">
+  <div class="wrap">
+    <div class="shead" data-io><span class="s-kick gold">Program Pendidikan</span><h2>Jalur Pembinaan Santri</h2>
+      <p>Pendidikan Al-Qur'an terpadu: Tahfidz, Tilawah, serta Khat &amp; Qira'atul Kutub, dibimbing oleh para asatidz secara langsung.</p></div>
+    <div class="pgrid" id="pGrid"></div>
+  </div>
+</section>
+
+<!-- PPDB -->
+<section id="ppdb">
+  <div class="wrap">
+    <div class="shead" data-io><span class="s-kick">Penerimaan Santri Baru</span><h2 id="ppTahun">PPDB</h2></div>
+    <div class="ppdb-card" data-io>
+      <div>
+        <span class="pp-status" id="ppStatus">Segera</span>
+        <h3 id="ppJudulTahun">Tahun Ajaran</h3>
+        <p class="pp-sub">Bergabunglah bersama santri-santri Nurul Qur'an dalam lingkungan belajar yang kondusif dan penuh keberkahan.</p>
+        <ul class="pp-rows">
+          <li><span>Periode Pendaftaran</span><b id="ppPeriode"></b></li>
+          <li><span>Kuota</span><b id="ppKuota"></b></li>
+          <li><span>Biaya Pendaftaran</span><b id="ppBiaya"></b></li>
+        </ul>
+        <div class="pp-cta"><a class="btn gold" id="ppWa" target="_blank" rel="noopener" style="display:none"><svg class="ic" viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z"/><path d="M8.8 9.2c.6 2.6 3.4 5.4 6 6l1.4-1.4c.3-.3.2-.8-.1-1l-1.7-.9-1.2 1.2c-1-.5-2.3-1.8-2.8-2.8L11.6 9l-.9-1.7c-.2-.3-.7-.4-1-.1z"/></svg> Daftar via WhatsApp</a>
+        <a class="btn ghost-w" href="#kontak">Hubungi Panitia</a></div>
+        <p class="pp-note" id="ppNote"></p>
+      </div>
+      <div class="steps">
+        <h4>Langkah Pendaftaran</h4>
+        <ol id="ppSteps"></ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BERITA -->
+<section id="berita" class="sec-alt">
+  <div class="wrap">
+    <div class="shead" data-io><span class="s-kick">Kabar Pesantren</span><h2>Berita &amp; Kegiatan Terbaru</h2></div>
+    <div class="bgrid">
+      <div id="bFeat" data-io></div>
+      <div id="bSide" data-io style="--d:.1s"></div>
+    </div>
+  </div>
+</section>
+
+<!-- AGENDA -->
+<section id="agenda">
+  <div class="wrap">
+    <div class="shead" data-io><span class="s-kick">Jadwal Kegiatan</span><h2>Agenda Mendatang</h2></div>
+    <div id="agList" data-io></div>
+  </div>
+</section>
+
+<!-- GALERI -->
+<section id="galeri" class="sec-alt">
+  <div class="wrap">
+    <div class="shead" data-io><span class="s-kick gold">Dokumentasi</span><h2>Galeri Kegiatan</h2></div>
+    <div class="ggrid" id="gGrid" data-io></div>
+  </div>
+</section>
+
+<!-- DONASI -->
+<section id="donasi">
+  <div class="wrap">
+    <div class="don-card" data-io>
+      <div>
+        <span class="s-kick gold" style="color:var(--gold)">Infaq &amp; Sedekah</span>
+        <h3>Salurkan Donasi Terbaik Anda</h3>
+        <p class="dsub" id="donSub">Dukung operasional pendidikan santri, pembangunan fasilitas, dan beasiswa santri yatim/dhuafa. Setiap rupiah Anda dihitung sebagai amal jariyah.</p>
+        <div class="rek" id="rekBox" style="display:none">
+          <div class="rek-info"><small id="donBankLbl">Bank</small><b id="donBank"></b><span id="donRek"></span><span id="donAn"></span></div>
+          <button class="copyb" id="btnCopy"><svg class="ic" viewBox="0 0 24 24"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg> Salin No. Rekening</button>
+        </div>
+      </div>
+      <div class="qris" id="qrisWrap" style="display:none"><img id="qrisImg" alt="QRIS Donasi"><small>Scan QRIS</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="kontak">
+  <div class="wrap">
+    <div class="ft">
+      <div>
+        <div class="fbrand"><span class="lg"><svg class="ic" viewBox="0 0 24 24"><path d="M12 2.5c2.3 2.4 3.5 4.4 3.5 5.9 0 1.8-1.5 3.1-3.5 3.1s-3.5-1.3-3.5-3.1c0-1.5 1.2-3.5 3.5-5.9z"/><path d="M4 21v-6.5A3.5 3.5 0 0 1 7.5 11h9a3.5 3.5 0 0 1 3.5 3.5V21"/><path d="M9.5 21v-3a2.5 2.5 0 0 1 5 0v3"/><path d="M2.5 21h19"/></svg><img src="logo-nurul-quran.png" alt="" onerror="this.remove()"></span><b id="ftNama2">Yayasan Nurul Qur'an</b></div>
+        <p id="ftTag"></p>
+        <div style="margin-top:14px" id="ftSoc"></div>
+      </div>
+      <div>
+        <h4>Kontak</h4>
+        <div id="ftKontak"></div>
+      </div>
+      <div>
+        <h4>Lokasi</h4>
+        <p id="ftAddr" style="margin-bottom:10px"></p>
+        <div class="ft-map" id="ftMap">Peta lokasi belum diatur di panel admin<br>(Pengaturan → Kontak → URL Google Maps Embed)</div>
+      </div>
+    </div>
+  </div>
+  <div class="copy">© <span id="ftY"></span> <b>Yayasan Nurul Qur'an</b> · Lendang Simbe, Mertak Tombok, Praya, Lombok Tengah, NTB · Barakallahu fiikum</div>
+</footer>
+
+<div id="nrd" role="dialog" aria-modal="true"><div class="nrd-box" id="nrdBox"></div></div>
+<div id="lbx" role="dialog" aria-modal="true"><div class="lbx-wrap"><button class="lbx-x" id="lbxX" aria-label="Tutup"><svg class="ic" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></svg></button><div class="lbx-box" id="lbxBox"></div><div class="lbx-bar" id="lbxBar"></div></div></div>
+<button class="topfab" id="topfab" aria-label="Kembali ke atas"><svg class="ic" viewBox="0 0 24 24"><path d="M12 19V5m0 0-6 6m6-6 6 6"/></svg></button>
+
+<script>try{var t=localStorage.getItem('nq_theme');if(t==='dark')document.documentElement.setAttribute('data-theme','dark')}catch(e){}</script>
+<!-- Data hasil publikasi admin (belum ada? otomatis pakai default bawaan) -->
+<script>window.NEWS=null;window.SITEDATA=null;</script>
+<script src="news.js"></script>
+<script src="site-data.js"></script>
+<script>
+(function(){
+"use strict";
+var $=function(s){return document.querySelector(s)};
+function esc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;")}
+function rich(s){return esc(s).replace(/&lt;em&gt;/g,"<em>").replace(/&lt;\/em&gt;/g,"</em>").replace(/&lt;br&gt;/g,"<br>")}
+function today(off){var d=new Date();if(off)d.setDate(d.getDate()+off);return d.toISOString().slice(0,10)}
+function fmt(d,opt){try{return new Date(d+"T00:00:00").toLocaleDateString("id-ID",opt||{day:"numeric",month:"long",year:"numeric"})}catch(e){return d}}
+function ic(n){return '<svg class="ic" viewBox="0 0 24 24">'+({
+masjid:'<path d="M12 2.5c2.3 2.4 3.5 4.4 3.5 5.9 0 1.8-1.5 3.1-3.5 3.1s-3.5-1.3-3.5-3.1c0-1.5 1.2-3.5 3.5-5.9z"/><path d="M4 21v-6.5A3.5 3.5 0 0 1 7.5 11h9a3.5 3.5 0 0 1 3.5 3.5V21"/><path d="M9.5 21v-3a2.5 2.5 0 0 1 5 0v3"/><path d="M2.5 21h19"/>',
+quran:'<path d="M4 19.5V5a2 2 0 0 1 2-2h14v16.5H6.5A2.5 2.5 0 0 0 4 22V19.5z"/><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M9 7h7M9 10.5h7"/>',
+buku:'<path d="M4 19.5V5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H19"/><path d="M9 7h7"/>',
+kelas:'<rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4M7.5 9l3 2.2-3 2.2M13.5 13.5H17"/>',
+star:'<path d="m12 3 2.7 5.8 6.3.8-4.6 4.3 1.2 6.1L12 17l-5.6 3 1.2-6.1L3 9.6l6.3-.8z"/>',
+heart:'<path d="M12 20.5S4.5 15.9 2.5 11.5A5.4 5.4 0 0 1 12 6.6a5.4 5.4 0 0 1 9.5 4.9c-2 4.4-9.5 9-9.5 9z"/>',
+img:'<rect x="3.5" y="4.5" width="17" height="15" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="M20.5 15.5 15 10l-9.5 9.5"/>',
+mail:'<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/>',
+phone:'<path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/>',
+pin:'<path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/>',
+ig:'<rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".9"/>',
+fb:'<path d="M14 8.5V7a2 2 0 0 1 2-2h1.5V2H15a5 5 0 0 0-5 5v1.5H7.5V12H10v10h4V12h2.6l.9-3.5z"/>',
+yt:'<rect x="2.5" y="5.5" width="19" height="13" rx="3"/><path d="m10 9 5.5 3L10 15z"/>',
+check:'<path d="M20 6 9 17l-5-5"/>'
+})[n]+'</svg>'}
+
+/* ═══ DEFAULT ═══ */
+var DEF_SD={
+  profile:{nama:"Yayasan Nurul Qur'an",tagline:"Membentuk generasi Qur'ani yang berilmu, berakhlak mulia, dan bermanfaat bagi agama, bangsa, dan masyarakat",
+    hero:{judul:"Membentuk Generasi <em>Qur'ani</em> yang Berilmu &amp; Berakhlak Mulia",sub:"Yayasan Nurul Qur'an di Lendang Simbe, Mertak Tombok, Praya, Lombok Tengah — membina santri melalui Tahfidz, Tilawah, serta Khat & Qira'atul Kutub dalam lingkungan yang asri, disiplin, dan penuh keberkahan.",foto:""},
+    visi:"Membentuk generasi Qur'ani yang berilmu, berakhlak mulia, dan bermanfaat bagi agama, bangsa, dan masyarakat.",
+    misi:["Menyelenggarakan pendidikan Al-Qur'an (tahfidz & tilawah) secara terarah dan terukur.","Membina akhlak santri melalui keteladanan, kedisiplinan, dan pembiasaan ibadah harian.","Mendalami ilmu-ilmu keislaman melalui khat & qira'atul kutub dan kajian kitab.","Mengembangkan kemandirian dan keterampilan hidup santri.","Membangun kerja sama dengan masyarakat, wali santri, alumni, dan instansi terkait."],
+    sejarah:"Yayasan Nurul Qur'an berdiri sejak tahun 2004 di Lendang Simbe, Desa Mertak Tombok, Kecamatan Praya, Kabupaten Lombok Tengah, Nusa Tenggara Barat. Berawal dari kegiatan pengajian dan pembinaan Al-Qur'an bagi anak-anak di sekitar pesantren, lembaga ini terus bertumbuh menjadi pusat pendidikan Al-Qur'an yang membina santri dari berbagai daerah dengan semangat menjaga, menghafal, dan mengamalkan Al-Qur'an.",
+    stats:{santri:0,ustadz:0,alumni:0,berdiri:2004}},
+  programs:[{ic:"quran",judul:"Tahfidzul Qur'an",desk:"Program menghafal Al-Qur'an dengan metode talaqqi, setoran berkala, dan murajaah terbimbing bersama musyrif."},{ic:"star",judul:"Tilawah & Tajwid",desk:"Pembinaan bacaan Al-Qur'an sesuai kaidah tajwid, dari tingkat dasar hingga mahir dengan munaqasyah berkala."},{ic:"buku",judul:"Khat & Qira'atul Kutub",desk:"Pendalaman kitab-kitab turats dengan metode khataman dan qira'ah di hadapan musykil."},{ic:"masjid",judul:"Madrasah Diniyah",desk:"Pendidikan keislaman berjenjang: akidah akhlak, fiqih, dan bahasa Arab dasar."},{ic:"kelas",judul:"Pendidikan Formal",desk:"Dukungan pendidikan sekolah formal agar santri berkembang seimbang antara diniyah dan umum."},{ic:"heart",judul:"Pembinaan Akhlak & Kemandirian",desk:"Pembiasaan ibadah berjamaah, kedisiplinan harian, dan keterampilan kemandirian santri."}],
+  agenda:[{tanggal:today(7),waktu:"08.00–13.00 WITA",judul:"Pendaftaran Santri Baru",tempat:"Sekretariat Yayasan"},{tanggal:today(30),waktu:"09.00–12.00 WITA",judul:"Khataman & Haflah Khusnul Khatimah",tempat:"Aula Pesantren"}],
+  ppdb:{status:"Segera",tahun:"2026/2027",mulai:today(7),selesai:today(60),kuota:"",biaya:"",wa:"",
+    syarat:["Mengisi formulir pendaftaran (datang langsung ke sekretariat)","Fotokopi ijazah / SKL","Fotokopi Kartu Keluarga & Akta Kelahiran","Pas foto terbaru","Surat keterangan sehat"],
+    catatan:"Informasi lengkap PPDB dapat ditanyakan langsung kepada panitia."},
+  gallery:[{judul:"Halaqah Tahfidz Pagi",foto:"",yt:""},{judul:"Haflah Khatmul Qur'an",foto:"",yt:""},{judul:"Kegiatan Santri",foto:"",yt:""},{judul:"Lingkungan Pesantren",foto:"",yt:""}],
+  settings:{email:"",phone:"",address:"Lendang Simbe, Desa Mertak Tombok, Kec. Praya, Kab. Lombok Tengah, NTB",maps:"",ig:"",fb:"",yt:"",donasi:{bank:"",norek:"",an:"",qris:""}}
+};
+var DEF_NEWS=[{id:"d1",tanggal:today(),kategori:"Pengumuman",judul:"Website Resmi Yayasan Nurul Qur'an Aktif",penulis:"Humas Nurul Qur'an",foto:"",tampil:true,
+  ringkasan:"Situs resmi Yayasan Nurul Qur'an kini aktif — berita kegiatan, agenda, PPDB santri baru, dan informasi pesantren akan diperbarui melalui halaman ini.",
+  isi:"Assalamu'alaikum warahmatullahi wabarakatuh.\n\nSitus resmi Yayasan Nurul Qur'an, Lendang Simbe, Mertak Tombok, Praya, Lombok Tengah, NTB, resmi aktif. Melalui situs ini masyarakat dapat memperoleh informasi mengenai program pendidikan Al-Qur'an, agenda kegiatan, penerimaan santri baru, dan kabar kegiatan pesantren.\n\nSeluruh informasi resmi akan diperbarui secara berkala oleh pengelola. Barakallahu fiikum."},
+ {id:"d2",tanggal:today(-14),kategori:"Kegiatan",judul:"Kegiatan Pendidikan Al-Qur'an Berjalan di Yayasan Nurul Qur'an",penulis:"Humas Nurul Qur'an",foto:"",tampil:true,
+  ringkasan:"Kegiatan tahfidz, tilawah, dan khat & qira'atul kutub santri berjalan rutin di kompleks pesantren, Lendang Simbe, Praya.",
+  isi:"Alhamdulillah, kegiatan pendidikan Al-Qur'an di Yayasan Nurul Qur'an berjalan dengan lancar. Santri mengikuti halaqah tahfidz pagi dan sore, setoran tilawah, serta kajian khat & qira'atul kutub di bawah bimbingan para asatidz.\n\nKegiatan ini merupakan bagian dari pembinaan rutin untuk membentuk generasi Qur'ani yang berilmu dan berakhlak mulia.\n\nDokumentasi kegiatan dapat dilihat pada bagian galeri di situs ini."}];
+
+/* ═══ LOAD ═══ */
+var D=window.SITEDATA||DEF_SD;
+var NEWS=((window.NEWS&&window.NEWS.length)?window.NEWS:DEF_NEWS).filter(function(n){return n.tampil!==false})
+  .sort(function(a,b){return b.tanggal.localeCompare(a.tanggal)});
+var P=D.profile, ST=D.settings||{}, PP=D.ppdb||{}, DN=ST.donasi||{};
+
+/* ═══ RENDER ═══ */
+document.title=P.nama+" — Pendidikan & Tahfidz Al-Qur'an, Praya Lombok Tengah NTB";
+ $('#hName').textContent=P.nama.toUpperCase();
+ $('#heroTitle').innerHTML=rich((P.hero&&P.hero.judul)||DEF_SD.profile.hero.judul);
+ $('#heroSub').textContent=(P.hero&&P.hero.sub)||'';
+ $('#ttNama').textContent=P.nama;
+ $('#ttVisi').textContent=P.visi||'';
+ $('#ttMisi').innerHTML=(P.misi||[]).map(function(m){return '<li>'+ic('check')+'<span>'+esc(m)+'</span></li>'}).join('');
+ $('#ttSejarah').textContent=P.sejarah||'';
+if(P.hero&&P.hero.foto)$('#heroBg').innerHTML='<img src="'+esc(P.hero.foto)+'" alt="">';
+/* stats — sembunyikan yang 0 */
+var st=P.stats||{}, items=[];
+if(st.santri)items.push(["Santri Aktif",st.santri]);
+if(st.ustadz)items.push(["Asatidz",st.ustadz]);
+if(st.alumni)items.push(["Alumni",st.alumni]);
+if(st.berdiri)items.push(["Berdiri Tahun",st.berdiri]);
+ $('#stats').innerHTML=items.length?items.map(function(x){return '<div class="stat"><b data-n="'+x[1]+'">'+(x[1]>2000?x[1]:'0')+'</b><span>'+x[0]+'</span></div>'}).join(''):'';
+/* topbar */
+ $('#tbTahun').textContent=PP.tahun||'';$('#tbStatus').textContent=PP.status||'';
+/* program */
+ $('#pGrid').innerHTML=(D.programs||[]).map(function(p){return '<div class="pcard" data-io><span class="pic">'+ic(p.ic||'quran')+'</span><h3>'+esc(p.judul)+'</h3><p>'+esc(p.desk)+'</p></div>'}).join('');
+/* ppdb */
+var stat=(PP.status||'').toLowerCase();
+ $('#ppStatus').textContent=PP.status||'Segera';
+if(stat==='segera')$('#ppStatus').classList.add('segera');
+if(stat==='ditutup')$('#ppStatus').classList.add('tutup');
+ $('#ppTahun').textContent='PPDB '+(PP.tahun||'');
+ $('#ppJudulTahun').textContent='Tahun Ajaran '+(PP.tahun||'');
+ $('#ppPeriode').textContent=(PP.mulai?fmt(PP.mulai):'–')+' s.d. '+(PP.selesai?fmt(PP.selesai):'–');
+ $('#ppKuota').textContent=PP.kuota||'–';$('#ppBiaya').textContent=PP.biaya||'–';
+ $('#ppNote').textContent=PP.catatan||'';
+ $('#ppSteps').innerHTML=(PP.syarat||[]).map(function(s,i){return '<li><span class="n">'+(i+1)+'</span><span>'+esc(s)+'</span></li>'}).join('');
+var wa=String(PP.wa||'').replace(/\D/g,'');
+if(wa){$('#ppWa').style.display='';$('#ppWa').href='https://wa.me/'+wa+'?text='+encodeURIComponent("Assalamu'alaikum, saya ingin mendapatkan informasi pendaftaran santri baru "+(PP.tahun||'')+" di Yayasan Nurul Qur'an. Terima kasih.")}
+/* berita */
+function featHTML(n){return '<div class="bfeat" data-open="'+n.id+'">'
+  +'<div class="bimg">'+(n.foto?'<img src="'+esc(n.foto)+'" alt="">':'')+'</div><div class="grad"></div>'
+  +'<span class="bcat">'+esc(n.kategori)+'</span>'
+  +'<div class="bfeat-b"><time>'+fmt(n.tanggal)+'</time><h3>'+esc(n.judul)+'</h3><p>'+esc(n.ringkasan||'')+'</p></div></div>'}
+if(NEWS.length){$('#bFeat').innerHTML=featHTML(NEWS[0]);
+  $('#bSide').innerHTML=NEWS.slice(1,4).map(function(n){
+    return '<div class="bmini" data-open="'+n.id+'"><div class="th">'+(n.foto?'<img src="'+esc(n.foto)+'" alt="">':ic('img'))+'</div><div><h4>'+esc(n.judul)+'</h4><small>'+fmt(n.tanggal,{day:"numeric",month:"short",year:"numeric"})+' · '+esc(n.kategori)+'</small></div></div>'}).join('');
+}else{$('#bFeat').innerHTML='<div style="padding:40px;text-align:center;color:var(--mut);border:1.5px dashed var(--line);border-radius:18px">Belum ada berita.</div>'}
+/* agenda */
+var AG=(D.agenda||[]).slice().sort(function(a,b){return a.tanggal.localeCompare(b.tanggal)});
+ $('#agList').innerHTML=AG.length?AG.map(function(a){var d=new Date(a.tanggal+"T00:00:00");
+  return '<div class="arow"><div class="dbox"><b>'+d.getDate()+'</b><span>'+d.toLocaleDateString('id-ID',{month:'short'})+'</span></div>'
+  +'<div><strong>'+esc(a.judul)+'</strong><small>'+esc(a.waktu||'')+(a.tempat?' · '+esc(a.tempat):'')+'</small></div></div>'}).join('')
+  :'<div style="padding:30px;text-align:center;color:var(--mut);border:1.5px dashed var(--line);border-radius:18px">Belum ada agenda.</div>';
+/* galeri */
+ $('#gGrid').innerHTML=(D.gallery||[]).map(function(g,i){
+  return '<figure class="gf" data-g="'+i+'">'
+    +(g.yt?'<span class="vp"><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M10 8.5l6 3.5-6 3.5z"/></svg></span>':'')
+    +(g.foto?'<img src="'+esc(g.foto)+'" alt="'+esc(g.judul)+'">':'<span class="ph">'+ic('img')+'</span>')
+    +'<figcaption class="cap">'+esc(g.judul)+'</figcaption></figure>'}).join('');
+/* donasi */
+var adaRek=!!(DN.bank||DN.norek);
+if(adaRek){$('#rekBox').style.display='';$('#donBankLbl').textContent=DN.bank?'':'Rekening';$('#donBank').textContent=DN.bank||'';$('#donBank').style.display=DN.bank?'':'none';
+  $('#donRek').textContent=DN.norek?'No. Rek: '+DN.norek:'';$('#donAn').textContent=DN.an?'a.n. '+DN.an:'';}
+if(DN.qris){$('#qrisWrap').style.display='';$('#qrisImg').src=DN.qris}
+if(!adaRek&&!DN.qris){$('#donSub').textContent="InsyaAllah informasi donasi resmi akan segera diperbarui. Untuk sementara, silakan hubungi pengelola pesantren langsung."}
+if(adaRek&&DN.norek){$('#btnCopy').addEventListener('click',function(){var t=(DN.norek||'').replace(/\s/g,'');
+  function ok(){var b=$('#btnCopy');b.innerHTML=ic('check')+' Tersalin!';
+    setTimeout(function(){b.innerHTML='<svg class="ic" viewBox="0 0 24 24"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg> Salin No. Rekening'},1800)}
+  if(navigator.clipboard)navigator.clipboard.writeText(t).then(ok);else{var i=document.createElement('input');i.value=t;document.body.appendChild(i);i.select();document.execCommand('copy');i.remove();ok()}})}
+/* footer */
+ $('#ftNama2').textContent=P.nama;
+ $('#ftTag').textContent=P.tagline||'';
+ $('#ftY').textContent=new Date().getFullYear();
+var soc='';if(ST.ig)soc+='<a href="'+esc(ST.ig)+'" target="_blank" rel="noopener">'+ic('ig')+'Instagram</a>';
+if(ST.fb)soc+='<a href="'+esc(ST.fb)+'" target="_blank" rel="noopener">'+ic('fb')+'Facebook</a>';
+if(ST.yt)soc+='<a href="'+esc(ST.yt)+'" target="_blank" rel="noopener">'+ic('yt')+'YouTube</a>';
+ $('#ftSoc').innerHTML=soc;
+var kon='';
+if(ST.email)kon+='<a href="mailto:'+esc(ST.email)+'">'+ic('mail')+esc(ST.email)+'</a>';
+if(ST.phone)kon+='<a href="tel:'+esc(ST.phone.replace(/[^+\d]/g,''))+'">'+ic('phone')+esc(ST.phone)+'</a>';
+if(ST.address)kon+='<a>'+ic('pin')+esc(ST.address)+'</a>';
+ $('#ftKontak').innerHTML=kon||'<p>Kontak belum diatur — lengkapi di panel admin.</p>';
+ $('#ftAddr').textContent=ST.address||'';
+if(ST.maps&&ST.maps.indexOf('http')===0){$('#ftMap').innerHTML='<iframe src="'+esc(ST.maps)+'" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'}
+
+/* ═══ READER MODAL ═══ */
+document.addEventListener('click',function(e){
+  var o=e.target.closest('[data-open]');if(o){var n=null;NEWS.forEach(function(x){if(x.id===o.dataset.open)n=x});if(n)openReader(n)}
+  var g=e.target.closest('[data-g]');if(g)openLbx(D.gallery[+g.dataset.g])});
+function openReader(n){var paras=(n.isi||'').split(/\n\s*\n/).map(function(p){return '<p>'+esc(p)+'</p>'}).join('');
+  $('#nrdBox').innerHTML='<button class="nrd-close" id="nrdX" aria-label="Tutup"><svg class="ic" viewBox="0 0 24 24" style="width:16px;height:16px"><path d="M18 6 6 18M6 6l12 12"/></svg></button>'
+    +'<div class="nrd-hero">'+(n.foto?'<img src="'+esc(n.foto)+'" alt="">':'')
+    +'<span class="nrd-chip">'+esc(n.kategori)+'</span><h2>'+esc(n.judul)+'</h2>'
+    +'<div class="nrd-meta">'+fmt(n.tanggal)+' · '+esc(n.penulis||'Humas')+'</div></div>'
+    +'<div class="nrd-body">'+paras+'</div>';
+  $('#nrd').classList.add('open');document.body.classList.add('lock');
+  $('#nrdX').addEventListener('click',closeReader)}
+function closeReader(){$('#nrd').classList.remove('open');document.body.classList.remove('lock')}
+ $('#nrd').addEventListener('click',function(e){if(e.target===this)closeReader()});
+/* ═══ LIGHTBOX ═══ */
+function ytId(u){var m=String(u||'').match(/(?:youtu\.be\/|v=|embed\/|shorts\/)([\w-]{11})/);return m?m[1]:''}
+function openLbx(g){if(!g)return;
+  var y=ytId(g.yt);
+  $('#lbxBox').innerHTML=y?'<iframe src="https://www.youtube.com/embed/'+y+'" allowfullscreen title="'+esc(g.judul)+'"></iframe>'
+    :(g.foto?'<img src="'+esc(g.foto)+'" alt="'+esc(g.judul)+'">':'');
+  $('#lbxBar').innerHTML='<span>'+esc(g.judul)+'</span>';
+  $('#lbx').classList.add('open');document.body.classList.add('lock')}
+function closeLbx(){$('#lbx').classList.remove('open');$('#lbxBox').innerHTML='';document.body.classList.remove('lock')}
+ $('#lbxX').addEventListener('click',closeLbx);
+ $('#lbx').addEventListener('click',function(e){if(e.target===this)closeLbx()});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeReader();closeLbx()}});
+
+/* ═══ COUNT UP + REVEAL ═══ */
+var io=new IntersectionObserver(function(es){es.forEach(function(en){if(!en.isIntersecting)return;
+  en.target.classList.add('in');
+  en.target.querySelectorAll('b[data-n]').forEach(function(b){if(b.dataset.done)return;b.dataset.done=1;
+    var t=+b.dataset.n;if(t>2000){b.textContent=t.toLocaleString('id-ID');return}
+    var s=performance.now();
+    (function f(now){var p=Math.min(1,(now-s)/1300);b.textContent=Math.round(t*(1-Math.pow(1-p,3))).toLocaleString('id-ID');if(p<1)requestAnimationFrame(f)})(s)});
+  io.unobserve(en.target)})},{threshold:.15});
+[].slice.call(document.querySelectorAll('[data-io]')).forEach(function(el){io.observe(el)});
+
+/* ═══ NAV MOBILE + DARK + TOPFAB ═══ */
+ $('#navToggle').addEventListener('click',function(){$('#nav').classList.toggle('open')});
+ $('#navLinks').addEventListener('click',function(){$('#nav').classList.remove('open')});
+ $('#btnDark').addEventListener('click',function(){var d=document.documentElement.getAttribute('data-theme')==='dark';
+  document.documentElement.setAttribute('data-theme',d?'':'dark');
+  try{localStorage.setItem('nq_theme',d?'':'dark')}catch(e){}});
+var fab=$('#topfab');
+window.addEventListener('scroll',function(){fab.classList.toggle('on',window.scrollY>600)});
+fab.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});
+})();
+</script>
+</body>
+</html>
