@@ -104,7 +104,7 @@ window.SITEDATA = {
     {
       "id": "g1",
       "judul": "Bersama Santri & Pengurus",
-      "foto": "beground.png",
+      "foto": "background.png",
       "yt": "",
       "tag": ""
     },
@@ -166,7 +166,7 @@ window.SITEDATA = {
     "ig": "",
     "fb": "",
     "yt": "",
-    "siteUrl": "",
+    "siteUrl": "https://nurulquranlombok.vercel.app",
     "donasi": {
       "bank": "",
       "norek": "",
@@ -174,7 +174,7 @@ window.SITEDATA = {
       "qris": ""
     },
     "images": {
-      "hero": "beground.png",
+      "hero": "background.png",
       "tentang": "tgh,sabarudin.jpg"
     }
   }
