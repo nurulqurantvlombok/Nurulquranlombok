@@ -459,6 +459,7 @@ function fmt(d){try{return new Date(d+"T00:00:00").toLocaleDateString("id-ID",{d
 function lsG(k){try{return localStorage.getItem(k)}catch(e){return null}}
 function lsS(k,v){try{localStorage.setItem(k,v)}catch(e){}}
 window.nqImgFix=function(el){if(el.dataset.f){el.remove()}else{el.dataset.f=1;el.src=el.src.replace('assets/img/','')}};
+var MP='assets/img/';
 function toast(m,err){var t=document.createElement('div');t.className='toast'+(err?' err':'');t.textContent=m;$('#toasts').appendChild(t);setTimeout(function(){t.style.opacity='0';t.style.transition='.4s';setTimeout(function(){t.remove()},400)},3200)}
 async function sha256(t){var b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(t));return [].map.call(new Uint8Array(b),function(x){return('0'+x.toString(16)).slice(-2)}).join('')}
 function btnBusy(b,txt){b.dataset.h=b.innerHTML;b.textContent=txt||'…';b.disabled=true}
@@ -529,6 +530,8 @@ var DEF={
      isi:"Alhamdulillah, kegiatan pendidikan Al-Qur'an di Yayasan Nurul Qur'an berjalan dengan lancar. Santri mengikuti halaqah tahfidz pagi dan sore, setoran tilawah, serta kajian khat & qira'atul kutub di bawah bimbingan para asatidz.||Kegiatan ini merupakan bagian dari pembinaan rutin untuk membentuk generasi Qur'ani yang berilmu dan berakhlak mulia.||Dokumentasi kegiatan dapat dilihat pada bagian galeri di situs ini."}],
   media:(function(){var a=[{name:"background.png"},{name:"tgh,sabarudin.jpg"}];GL.forEach(function(n){a.push({name:n})});return a})(),
   settings:{email:"",phone:"",address:"Lendang Simbe, Desa Mertak Tombok, Kec. Praya, Kab. Lombok Tengah, NTB",maps:"",ig:"",fb:"",yt:"",siteUrl:"https://nurulquranlombok.vercel.app",
+    hero:{judul:"Membentuk Generasi <em>Qur'ani</em><br>yang Berilmu &amp; Berakhlak Mulia.",
+      sub:"Yayasan Nurul Qur'an di Lendang Simbe, Mertak Tombok, Praya, Lombok Tengah — membina santri melalui Tahfidz, Tilawah, serta Khat & Qira'atul Kutub dalam lingkungan yang asri, disiplin, dan penuh keberkahan."},
     donasi:{bank:"",norek:"",an:"",qris:""},
     images:{hero:"background.png",tentang:"tgh,sabarudin.jpg"}}
 };
@@ -540,12 +543,18 @@ function load(){
     if(p&&typeof p==='object'){
       if(!p.profile)p.profile=DEF.profile;
       if(!p.settings)p.settings=DEF.settings;
+      ['news','programs','agenda','gallery'].forEach(function(k){if(!Array.isArray(p[k]))p[k]=JSON.parse(JSON.stringify(DEF[k]))});
+      if(!p.ppdb||typeof p.ppdb!=='object')p.ppdb=JSON.parse(JSON.stringify(DEF.ppdb));
       if(!p.media)p.media=DEF.media;
       S.data=p;}}
   }catch(e){}
   try{var g=lsG('nq_gh');if(g)S.gh=JSON.parse(g)}catch(e){}
   (S.data.news||[]).forEach(function(n){if(!n.id)n.id=uid()});
   if(!S.data.media||!S.data.media.length)S.data.media=JSON.parse(JSON.stringify(DEF.media));
+  /* data lama: nama foto latar beground -> background */
+  S.data=JSON.parse(JSON.stringify(S.data).split('beground').join('background'));
+  if(!S.data.settings.siteUrl)S.data.settings.siteUrl=DEF.settings.siteUrl;
+  if(!S.data.settings.hero&&S.data.profile&&S.data.profile.hero)S.data.settings.hero=S.data.profile.hero;
 }
 function save(){lsS('nq_data',JSON.stringify(S.data));refreshAll()}
 
@@ -578,7 +587,6 @@ if(sessionStorage.getItem('nq_adm')==='1'){enter()}
   $$('.view').forEach(function(v){v.classList.toggle('on',v.id==='v-'+b.dataset.v)})});
 
 /* ═══ GITHUB ═══ */
-var MP='assets/img/';
 function fixPath(p){p=String(p==null?'':p);if(!p||p.indexOf('/')>=0||/^(https?:|data:|blob:)/i.test(p))return p;return MP+p}
 function ghOK(){return !!(S.gh.token&&S.gh.owner&&S.gh.repo)}
 function ghStatus(){var el=$('#ghStatus');
@@ -647,6 +655,7 @@ function extractJSON(txt,varName){
 async function pullRemote(){
   if(!ghOK())return;
   var okN=false,okS=false,okM=false;
+  var prevSite=S.data.settings.siteUrl||DEF.settings.siteUrl||"";
   try{
     var jn=await ghGet('news.js');
     var nn=extractJSON(d64u(jn.content),'NEWS');
@@ -669,6 +678,10 @@ async function pullRemote(){
       names.forEach(function(n){if(!cur[n])S.data.media.push({name:n})});
       okM=true}
   }catch(e){console.warn('assets/img/:',e.message)}
+  /* data lama: nama foto latar beground -> background + isi default yang hilang */
+  S.data=JSON.parse(JSON.stringify(S.data).split('beground').join('background'));
+  if(!S.data.settings.siteUrl)S.data.settings.siteUrl=prevSite;
+  if(!S.data.settings.hero&&S.data.profile&&S.data.profile.hero)S.data.settings.hero=S.data.profile.hero;
   save();
   if(okN||okS||okM)toast('Data terbaru berhasil ditarik dari GitHub'+(okM?' (termasuk daftar foto)':'')+'.');
   else toast('Tidak ada data yang bisa ditarik — periksa koneksi atau format file di repo.',true);
@@ -935,6 +948,11 @@ function fillProfil(){var p=S.data.profile;
   p.stats={santri:+$('#fSantri').value||0,ustadz:+$('#fUstadz').value||0,alumni:+$('#fAlumni').value||0,berdiri:+$('#fTahun').value||0};
   save();toast('Profil tersimpan. Klik tombol Publikasikan di bar atas.')});
 
+/* Pilih opsi foto dengan fallback: path assets/img/ lalu nama file biasa */
+function setPick(sel,val){if(!sel)return;var v=fixPath(val||''),has=false,i;
+  for(i=0;i<sel.options.length;i++){if(sel.options[i].value===v){has=true;break}}
+  if(!has){v=String(val||'');for(i=0;i<sel.options.length;i++){if(sel.options[i].value===v){has=true;break}}}
+  sel.value=has?v:''}
 /* PENGATURAN */
 function renderSet(){var g=S.gh,s=S.data.settings;
   $('#ghTok').value=g.token||'';$('#ghOwn').value=g.owner||'';$('#ghRepo').value=g.repo||'';$('#ghBranch').value=g.branch||'main';
@@ -942,10 +960,10 @@ function renderSet(){var g=S.gh,s=S.data.settings;
   $('#sEmail').value=s.email||'';$('#sPhone').value=s.phone||'';$('#sAddr').value=s.address||'';$('#sMaps').value=s.maps||'';
   $('#sIg').value=s.ig||'';$('#sFb').value=s.fb||'';$('#sYt').value=s.yt||'';
   var d=s.donasi||{};$('#dBank').value=d.bank||'';$('#dNorek').value=d.norek||'';$('#dAn').value=d.an||'';
-  $('#dQris').value=d.qris?fixPath(d.qris):'';
-  var hz=s.hero||{};$('#hzJ').value=hz.judul||'';$('#hzS').value=hz.sub||'';
-  $('#lkHero').value=fixPath((s.images||{}).hero||'');
-  $('#lkTentang').value=fixPath((s.images||{}).tentang||'');
+  setPick($('#dQris'),d.qris||'');
+  var hz=s.hero||(S.data.profile&&S.data.profile.hero)||{};$('#hzJ').value=hz.judul||'';$('#hzS').value=hz.sub||'';
+  setPick($('#lkHero'),(s.images||{}).hero||'');
+  setPick($('#lkTentang'),(s.images||{}).tentang||'');
 }
  $('#ghSave').addEventListener('click',function(){
   S.gh={token:$('#ghTok').value.trim(),owner:$('#ghOwn').value.trim(),repo:$('#ghRepo').value.trim(),branch:$('#ghBranch').value.trim()||'main'};
